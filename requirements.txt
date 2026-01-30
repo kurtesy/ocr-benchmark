@@ -1,0 +1,6 @@
+streamlit==1.41.1
+pandas==2.2.3
+datetime==5.5
+plotly==5.24.1
+sqlalchemy==2.0.38
+python-dotenv==1.0.1

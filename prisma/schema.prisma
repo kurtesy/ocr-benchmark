@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BenchmarkRun {
+  id             String            @id @default(uuid()) @db.Uuid
+  completedAt    DateTime?         @map("completed_at")
+  createdAt      DateTime          @default(now()) @map("created_at")
+  description    String?           @map("description")
+  error          String?
+  modelsConfig   Json              @map("models_config") // The models.yaml configuration
+  results        BenchmarkResult[]
+  runBy          String?           @map("run_by")
+  status         String // 'running', 'completed', 'failed'
+  timestamp      String // timestamp format: YYYY-MM-DD-HH-mm-ss
+  totalDocuments Int               @map("total_documents")
+
+  @@map("benchmark_runs")
+}
+
+model BenchmarkResult {
+  id                    String       @id @default(uuid()) @db.Uuid
+  benchmarkRun          BenchmarkRun @relation(fields: [benchmarkRunId], references: [id])
+  benchmarkRunId        String       @map("benchmark_run_id")
+  createdAt             DateTime     @default(now()) @map("created_at")
+  directImageExtraction Boolean      @default(false) @map("direct_image_extraction")
+  error                 String?
+  extractionModel       String?      @map("extraction_model")
+  fileUrl               String       @map("file_url")
+  fullJsonDiff          Json?        @map("full_json_diff")
+  jsonAccuracy          Float?       @map("json_accuracy")
+  jsonAccuracyResult    Json?        @map("json_accuracy_result")
+  jsonDiff              Json?        @map("json_diff")
+  jsonDiffStats         Json?        @map("json_diff_stats")
+  jsonSchema            Json         @map("json_schema")
+  levenshteinDistance   Float?       @map("levenshtein_distance")
+  metadata              Json         @map("metadata")
+  ocrModel              String       @map("ocr_model")
+  predictedJson         Json?        @map("predicted_json")
+  predictedMarkdown     String?      @map("predicted_markdown")
+  trueJson              Json         @map("true_json")
+  trueMarkdown          String       @map("true_markdown")
+  usage                 Json?
+
+  @@map("benchmark_results")
+}
