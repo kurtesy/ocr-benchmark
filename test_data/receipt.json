@@ -1,0 +1,155 @@
+{
+  "imageUrl": "/Users/nishant.patel/Downloads/Afip vigente (1)_page-0001.jpg",
+  "metadata": {
+    "orientation": 0,
+    "documentQuality": "clean",
+    "resolution": [
+      612,
+      792
+    ],
+    "language": "EN"
+  },
+  "jsonSchema": {
+    "type": "object",
+    "required": [
+      "merchant",
+      "receipt_details",
+      "totals"
+    ],
+    "properties": {
+      "totals": {
+        "type": "object",
+        "required": [
+          "total"
+        ],
+        "properties": {
+          "tax": {
+            "type": "number",
+            "description": "Tax amount"
+          },
+          "total": {
+            "type": "number",
+            "description": "Final total amount"
+          },
+          "subtotal": {
+            "type": "number",
+            "description": "Subtotal before tax and fees"
+          }
+        },
+        "description": "Payment totals"
+      },
+      "merchant": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Business name"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Contact phone number"
+          },
+          "address": {
+            "type": "string",
+            "description": "Store location address"
+          }
+        },
+        "description": "Basic merchant information"
+      },
+      "line_items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "description",
+            "amount"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "description": "Price of the item"
+            },
+            "description": {
+              "type": "string",
+              "description": "Item name or description"
+            }
+          }
+        },
+        "description": "List of purchased items"
+      },
+      "receipt_details": {
+        "type": "object",
+        "required": [
+          "date"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "Transaction date"
+          },
+          "time": {
+            "type": "string",
+            "description": "Transaction time"
+          },
+          "receipt_number": {
+            "type": "string",
+            "description": "Receipt or ticket number"
+          }
+        },
+        "description": "Transaction details"
+      },
+      "payment": {
+        "type": "object",
+        "properties": {
+          "payment_method": {
+            "type": "string",
+            "description": ""
+          },
+          "card_last_four_digits": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "trueJsonOutput": {
+    "totals": {
+      "tax": 6.18,
+      "total": 48.43,
+      "subtotal": 42.25
+    },
+    "merchant": {
+      "name": "Nick the Greek Souvlaki & Gyro House",
+      "phone": "(415) 757-0426",
+      "address": "121 Spear Street, Suite B08, San Francisco, CA 94105"
+    },
+    "line_items": [
+      {
+        "amount": 12.5,
+        "description": "Beef/Lamb Gyro Pita"
+      },
+      {
+        "amount": 13.25,
+        "description": "Gyro Bowl"
+      },
+      {
+        "amount": 16.5,
+        "description": "Pork Gyro Pita"
+      }
+    ],
+    "receipt_details": {
+      "date": "November 8, 2024",
+      "time": "2:16 PM",
+      "receipt_number": "NKZ1"
+    },
+    "payment": {
+      "payment_method": "Mastercard",
+      "card_last_four_digits": "0920"
+    }
+  },
+  "trueMarkdownOutput": "# ARCA\n\n## CONSTANCIA DE INSCRIPCION\n\n**Watermarks:**\n- ARCA\n- ARCA\n- ARCA\n- ARCA\n- ARCA\n- ARCA\n- ARCA\n\n**Contributor:**\nFidelina Ojeda Ozuna  \nCUIT: 27-93983005-2\n\n### Impuestos/Regímenes Nacionales Registrados y Fecha de Alta:\n- **Ganancias Personas Físicas:** 01-2025  \n- **IVA:** 01-2025  \n- **Reg. Trab. Autónomo (Categoria T3, Cat I):** Ingresos hasta $25,000, 01-2025  \n- **Reg. Seguridad Social Empleador:** 11-2025\n\n### Observaciones:\nContribuyente no amparado en los beneficios promocionales industriales establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emisión de la presente constancia.\n\nEsta constancia no da cuenta de la inscripción en:\n1. Impuesto Bienes Personales y Exteriorización - Ley 26476: De corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.\n2. Impuesto a las Ganancias: La condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Artículo 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n3. Aporte Solidario: De corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n4. Responsable Deuda Ajena Aporte Solidario: De corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\n### Actividades Nacionales Registradas y Fecha de Alta:\n**Actividad principal:**\n- Código: 561013 (F-883) - Servicios de \"Fast Food\" y locales de venta de comidas y bebidas al paso.\n**Mes de inicio:**\n- Enero/2024.\n**Secundarias:**\n*(No especificadas)*\n**Mes de cierre ejercicio comercial:**\nDiciembre.\n\n### Domicilio Fiscal - ARCA:\njunin 1091,\ndomicilio: Ciudad Autónoma Buenos Aires,\ndirección: 1113-Ciudad Autónoma Buenos Aires.\n\n### Vigencia:\nto: Desde 22/12/2025 hasta 21/01/2026.\n\n---\n*Hora:* 10:04:23   \n*Verificador:* 109962093530\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor en la página institucional de ARCA [http://www.arca.gob.ar](http://www.arca.gob.ar).\n\n---\npágina número: 1/1"
+}

@@ -89,13 +89,17 @@ export const TOKEN_COST = {
     input: 0.15,
     output: 0.6,
   },
-  'gemini-3-flash-preview': {
+  'gemini-2.5-pro': {
     input: 1.25,
     output: 10,
   },
+  'gemini-3-flash-preview': {
+    input: 1.25, //TODO Update this
+    output: 10,  //TODO Update this
+  },
   'gemini-3-pro-preview': {
-    input: 1.25,
-    output: 10,
+    input: 1.25,//TODO Update this
+    output: 10,//TODO Update this
   },
   'gpt-4o': {
     input: 2.5,

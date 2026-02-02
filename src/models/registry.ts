@@ -53,6 +53,7 @@ export const GOOGLE_GENERATIVE_AI_MODELS = [
   'gemini-2.5-pro-preview-03-25',
   'gemini-2.5-flash-preview-05-20',
   'gemini-2.5-flash',
+  'gemini-2.5-pro',
   'gemini-3-pro-preview',
   'gemini-3-flash-preview'
 ];

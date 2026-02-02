@@ -1,6 +1,7 @@
 import OpenAI from 'openai';
 import sharp from 'sharp';
 
+import fs from 'fs';
 import { ModelProvider } from './base';
 import { Usage } from '../types';
 import { calculateTokenCost, OCR_SYSTEM_PROMPT } from './shared';
@@ -30,8 +31,15 @@ export class DashscopeProvider extends ModelProvider {
     const start = performance.now();
 
     // Fetch the image
-    const imageResponse = await fetch(imagePath);
-    const imageBuffer = await imageResponse.arrayBuffer();
+    let imageBuffer: ArrayBufferLike;
+    if (imagePath.startsWith('http')) {
+      // read image from URL and convert to base64
+      const response = await fetch(imagePath);
+      imageBuffer = await response.arrayBuffer();
+    } else {
+      // read image from local path
+      imageBuffer = fs.readFileSync(imagePath).buffer;
+    }
 
     // compress the image
     const resizedImageBuffer = await sharp(Buffer.from(imageBuffer))
