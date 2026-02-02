@@ -41,11 +41,14 @@ In the example below, an LLM could decode both blocks of text without any issue.
 ## Running the benchmark
 
 1. Clone the repo and install dependencies: `npm install`
-  PS: Install imagemagick -> [For Mac]`brew install imagemagick` & [For Ubuntu]`sudo apt-get install imagemagick`
+   1. For Mac Install imagemagick -> `brew install imagemagick`
+   2. For Ubuntu -> `sudo apt-get install imagemagick`
 2. Prepare your test data
    1. For local data, add individual files to the `data` folder.
    2. To pull from a DB, add `DATABASE_URL` in your `.env`
-3. Copy the `models.example.yaml` file to `models.yaml`. Set up API keys in `.env` for the models you want to test. Check out the [supported models](#supported-models) here.
+3. Copy the `models.example.yaml` file to `models.yaml`. 
+   1. Set up API keys in `.env` for the models you want to test. Check out the [supported models](#supported-models) here.
+   2. If you want to use your service account (google creds) create a `cred.json` in root folder and provide service account details. Check for `cred-example.json` for details
 4. Run the benchmark: `npm run benchmark`
 5. Results will be saved in the `results/<timestamp>/results.json` file.
 
@@ -67,31 +70,31 @@ You can view configuration for each model in the [src/models/](./src/models/) fo
 
 ### Closed-source LLMs
 
-| Model Provider | Models                                                       | OCR | JSON Extraction | Required ENV Variables                                                                               |
-| -------------- | ------------------------------------------------------------ | --- | --------------- | ---------------------------------------------------------------------------------------------------- |
-| Anthropic      | `claude-3-5-sonnet-20241022`                                 | ✅  | ✅              | `ANTHROPIC_API_KEY`                                                                                  |
-| OpenAI         | `gpt-4o`                                                     | ✅  | ✅              | `OPENAI_API_KEY`                                                                                     |
-| Gemini         | `gemini-2.0-flash-001`, `gemini-1.5-pro`, `gemini-1.5-flash` | ✅  | ✅              | `GOOGLE_GENERATIVE_AI_API_KEY`                                                                       |
-| Mistral        | `mistral-ocr`                                                | ✅  | ❌              | `MISTRAL_API_KEY`                                                                                    |
-| OmniAI         | `omniai`                                                     | ✅  | ✅              | `OMNIAI_API_KEY`, `OMNIAI_API_URL`                                                                   |
+| Model Provider | Models                                                                                                                                                                                                                                              | OCR | JSON Extraction | Required ENV Variables             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --------------- | ---------------------------------- |
+| Anthropic      | `claude-3-5-sonnet-20241022`                                                                                                                                                                                                                        | ✅   | ✅               | `ANTHROPIC_API_KEY`                |
+| OpenAI         | `gpt-4o`                                                                                                                                                                                                                                            | ✅   | ✅               | `OPENAI_API_KEY`                   |
+| Gemini         | `gemini-2.0-flash-001`, `gemini-1.5-pro`, `gemini-1.5-flash`, `gemini-2.5-flash`, `gemini-2.5-pro`,`gemini-2.5-pro-exp-03-25`,`gemini-2.5-pro-preview-03-25`,`gemini-2.5-flash-preview-05-20`, `gemini-3.0-flash-preview`, `gemini-3.0-pro-preview` | ✅   | ✅               | `GOOGLE_GENERATIVE_AI_API_KEY`     |
+| Mistral        | `mistral-ocr`                                                                                                                                                                                                                                       | ✅   | ❌               | `MISTRAL_API_KEY`                  |
+| OmniAI         | `omniai`                                                                                                                                                                                                                                            | ✅   | ✅               | `OMNIAI_API_KEY`, `OMNIAI_API_URL` |
 
 ### Open-source LLMs
 
-| Model Provider | Models                                                       | OCR | JSON Extraction | Required ENV Variables |
-| -------------- | ------------------------------------------------------------ | --- | --------------- | ---------------------- |
-| Gemma 3        | `google/gemma-3-27b-it`                                      | ✅  | ❌              |                        |
-| Qwen 2.5       | `qwen2.5-vl-32b-instruct`, `qwen2.5-vl-72b-instruct`        | ✅  | ❌              |                        |
-| Llama 3.2      | `meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo`, `meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo` | ✅  | ❌              |                        |
-| ZeroX          | `zerox`                                                      | ✅  | ✅              | `OPENAI_API_KEY`                                                                                     |
+| Model Provider | Models                                                                                             | OCR | JSON Extraction | Required ENV Variables |
+| -------------- | -------------------------------------------------------------------------------------------------- | --- | --------------- | ---------------------- |
+| Gemma 3        | `google/gemma-3-27b-it`                                                                            | ✅   | ❌               |                        |
+| Qwen 2.5       | `qwen2.5-vl-32b-instruct`, `qwen2.5-vl-72b-instruct`                                               | ✅   | ❌               |                        |
+| Llama 3.2      | `meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo`, `meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo` | ✅   | ❌               |                        |
+| ZeroX          | `zerox`                                                                                            | ✅   | ✅               | `OPENAI_API_KEY`       |
 
 ### Cloud OCR Providers
 
-| Model Provider | Models                                                       | OCR | JSON Extraction | Required ENV Variables                                                                               |
-| -------------- | ------------------------------------------------------------ | --- | --------------- | ---------------------------------------------------------------------------------------------------- |
-| AWS            | `aws-text-extract`                                           | ✅  | ❌              | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`                                           |
-| Azure          | `azure-document-intelligence`                                | ✅  | ❌              | `AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT`, `AZURE_DOCUMENT_INTELLIGENCE_KEY`                            |
-| Google         | `google-document-ai`                                         | ✅  | ❌              | `GOOGLE_LOCATION`, `GOOGLE_PROJECT_ID`, `GOOGLE_PROCESSOR_ID`, `GOOGLE_APPLICATION_CREDENTIALS_PATH` |
-| Unstructured   | `unstructured`                                               | ✅  | ❌              | `UNSTRUCTURED_API_KEY`                                                                               |
+| Model Provider | Models                        | OCR | JSON Extraction | Required ENV Variables                                                                               |
+| -------------- | ----------------------------- | --- | --------------- | ---------------------------------------------------------------------------------------------------- |
+| AWS            | `aws-text-extract`            | ✅   | ❌               | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`                                           |
+| Azure          | `azure-document-intelligence` | ✅   | ❌               | `AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT`, `AZURE_DOCUMENT_INTELLIGENCE_KEY`                            |
+| Google         | `google-document-ai`          | ✅   | ❌               | `GOOGLE_LOCATION`, `GOOGLE_PROJECT_ID`, `GOOGLE_PROCESSOR_ID`, `GOOGLE_APPLICATION_CREDENTIALS_PATH` |
+| Unstructured   | `unstructured`                | ✅   | ❌               | `UNSTRUCTURED_API_KEY`                                                                               |
 
 - LLMS are instructed to use the following [system prompts](./src/models/shared/prompt.ts) for OCR and JSON extraction.
 - For Google Document AI, you need to include `google_credentials.json` in the `data` folder.

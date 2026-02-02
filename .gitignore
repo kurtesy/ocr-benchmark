@@ -6,6 +6,7 @@ venv
 # Configuration and credentials
 .env
 google_credentials.json
+cred.json
 models.yaml
 
 # Data and model files
