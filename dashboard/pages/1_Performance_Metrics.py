@@ -200,16 +200,14 @@ def main():
 
     with col1:
         # Create a dropdown to select the test run
-        selected_timestamp = st.selectbox(
+        selected_run = st.selectbox(
             "Select Test Run",
-            [run["timestamp"] for run in runs],
-            format_func=lambda x: datetime.strptime(x, "%Y-%m-%d-%H-%M-%S").strftime(
-                "%Y-%m-%d %H:%M:%S"
-            ),
+            [run["run_name"] for run in runs],
+            format_func=lambda x: x,
         )
-
     # Load the detailed results only when a run is selected
-    run_data = load_results_for_run(selected_timestamp)
+    selected_timestamp = selected_run.split("--")[1]
+    run_data = load_results_for_run(selected_timestamp, True, selected_run)
 
     with col2:
         st.markdown('<div style="margin-top: 24px;">', unsafe_allow_html=True)

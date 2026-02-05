@@ -1,0 +1,3207 @@
+[
+  {
+    "fileUrl": "images/BIR2303_Coop.jpeg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "form_number",
+        "ocn",
+        "ocn_generation_date",
+        "tin_branch_code",
+        "taxpayer_name",
+        "tin_issuance_date",
+        "registering_office_type",
+        "registered_address",
+        "tax_types"
+      ],
+      "properties": {
+        "form_number": {
+          "type": "string",
+          "description": "The form number of the certificate, which is 2303."
+        },
+        "ocn": {
+          "type": "string",
+          "description": "The OCN (Online Certificate Number)."
+        },
+        "ocn_generation_date": {
+          "type": "string",
+          "description": "The date when the OCN was generated."
+        },
+        "tin_branch_code": {
+          "type": "string",
+          "description": "The Taxpayer Identification Number (TIN) and branch code."
+        },
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "tin_issuance_date": {
+          "type": "string",
+          "description": "The date the TIN was issued."
+        },
+        "registering_office_type": {
+          "type": "string",
+          "description": "The type of registering office, e.g., 'Head Office' or 'Branch'."
+        },
+        "registered_address": {
+          "type": "string",
+          "description": "The full registered address of the taxpayer."
+        },
+        "tax_types": {
+          "type": "array",
+          "description": "List of tax types the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "tax_type",
+              "form_type",
+              "filing_start_date",
+              "filing_frequency",
+              "filing_due_date"
+            ],
+            "properties": {
+              "tax_type": {
+                "type": "string",
+                "description": "Name of the tax type."
+              },
+              "form_type": {
+                "type": "string",
+                "description": "The BIR form type associated with the tax."
+              },
+              "filing_start_date": {
+                "type": "string",
+                "description": "The start date for filing this tax type."
+              },
+              "filing_frequency": {
+                "type": "string",
+                "description": "How often the tax needs to be filed (e.g., MONTHLY, QUARTERLY, ANNUALLY)."
+              },
+              "filing_due_date": {
+                "type": "string",
+                "description": "The deadline for filing the tax."
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.0-flash",
+    "extractionModel": "gemini-2.0-flash",
+    "trueMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>Seal of the Bureau of Internal Revenue - Republic of the Philippines<logo>\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td width=\"33%\"><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td width=\"33%\"><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td width=\"33%\"><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - </td>\n      <td>1604C</td>\n      <td>January 1, </td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the </td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "trueJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - ",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, ",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the "
+        }
+      ]
+    },
+    "predictedMarkdown": "[BUREAU OF INTERNAL REVENUE LOGO]\n\nBIR FORM\n2303\nREVISED: APRIL 2019\n\n[PHILIPPINES LOGO]\nREPUBLIKA NG PILIPINAS\nKA GAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC2023000006914\nDate OCN Generated: October 12, 2023\n\nCERTIFICATE OF REGISTRATION\n\n<table>\n<tr>\n<td>TIN & BRANCH CODE</td>\n<td>NAME OF TAXPAYER</td>\n<td>TIN ISSUANCE DATE</td>\n</tr>\n<tr>\n<td>604-395-912-00000</td>\n<td>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n<td>January 12, 2022</td>\n</tr>\n</table>\n\n<table>\n<tr>\n<td>REGISTERING OFFICE</td>\n</tr>\n<tr>\n<td>☐ Head Office ☑ Branch</td>\n</tr>\n</table>\n\n<table>\n<tr>\n<td>REGISTERED ADDRESS</td>\n</tr>\n<tr>\n<td>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n</tr>\n</table>\n\n<table>\n<tr>\n<td>TAX TYPES</td>\n<td>FORM TYPES</td>\n<td>FILING START DATE</td>\n<td>FILING FREQUENCY</td>\n<td>FILING DUE DATE</td>\n</tr>\n<tr>\n<td>WITHHOLDING TAX - FINAL</td>\n<td>0619F</td>\n<td>June 1, 2022</td>\n<td>MONTHLY</td>\n<td>On or before the 10th day following the month in which withholding was made.</td>\n</tr>\n<tr>\n<td>WITHHOLDING TAX - FINAL</td>\n<td>1604F</td>\n<td>January 1, 2023</td>\n<td>ANNUALLY</td>\n<td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued.</td>\n</tr>\n<tr>\n<td>WITHHOLDING TAX - FINAL</td>\n<td>1601FQ</td>\n<td>July 1, 2022</td>\n<td>QUARTERLY</td>\n<td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n</tr>\n<tr>\n<td>CORPORATE INCOME TAX</td>\n<td>1702</td>\n<td>January 1, 2023</td>\n<td>ANNUALLY</td>\n<td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n</tr>\n<tr>\n<td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n<td>0619E</td>\n<td>February 1, 2022</td>\n<td>MONTHLY</td>\n<td>On or before the 10th day of the month following the month in which withholding was made.</td>\n</tr><tr>\n<td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n<td>1601EQ</td>\n<td>April 1, 2022</td>\n<td>QUARTERLY</td>\n<td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n</tr><tr>\n<td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n<td>1604E</td>\n<td>January 1, 2023</td>\n<td>ANNUALLY</td>\n<td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n</tr><tr>\n<td>WITHHOLDING TAX - COMPENSATION</td>\n<td>1601C</td>\n<td>February 1, 2022</td>\n<td>MONTHLY</td>\n<td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n</tr><tr>\n<td>WITHHOLDING TAX -</td>\n<td>1604C</td>\n<td>January 1,</td>\n<td>ANNUALLY</td>\n<td>On or before January 31 of ths</td>\n</tr>\n</table>\n\n<page_number>Page 1 of 3</page_number>",
+    "predictedJson": {
+      "form_number": "2303",
+      "ocn": "044RC2023000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Branch",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX -",
+          "form_type": "1604C",
+          "filing_start_date": "January 1,",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of ths"
+        }
+      ]
+    },
+    "levenshteinDistance": 0.7779,
+    "jsonAccuracy": 0.8679,
+    "jsonDiff": {
+      "ocn": {
+        "__old": "044RC20230000006914",
+        "__new": "044RC2023000006914"
+      },
+      "registering_office_type": {
+        "__old": "Head Office",
+        "__new": "Branch"
+      },
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of ths"
+            }
+          }
+        ]
+      ]
+    },
+    "fullJsonDiff": {
+      "form_number": "2303",
+      "ocn": {
+        "__old": "044RC20230000006914",
+        "__new": "044RC2023000006914"
+      },
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": {
+        "__old": "Head Office",
+        "__new": "Branch"
+      },
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "0619F",
+            "filing_start_date": "June 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1604F",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1601FQ",
+            "filing_start_date": "July 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "CORPORATE INCOME TAX",
+            "form_type": "1702",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "0619E",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1601EQ",
+            "filing_start_date": "April 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1604E",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - COMPENSATION",
+            "form_type": "1601C",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "form_type": "1604C",
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of ths"
+            }
+          }
+        ]
+      ]
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 7,
+      "total": 7
+    },
+    "jsonAccuracyResult": {
+      "score": 0.8679,
+      "jsonDiff": {
+        "ocn": {
+          "__old": "044RC20230000006914",
+          "__new": "044RC2023000006914"
+        },
+        "registering_office_type": {
+          "__old": "Head Office",
+          "__new": "Branch"
+        },
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of ths"
+              }
+            }
+          ]
+        ]
+      },
+      "fullJsonDiff": {
+        "form_number": "2303",
+        "ocn": {
+          "__old": "044RC20230000006914",
+          "__new": "044RC2023000006914"
+        },
+        "ocn_generation_date": "October 12, 2023",
+        "tin_branch_code": "604-395-912-00000",
+        "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+        "tin_issuance_date": "January 12, 2022",
+        "registering_office_type": {
+          "__old": "Head Office",
+          "__new": "Branch"
+        },
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST., BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "0619F",
+              "filing_start_date": "June 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1604F",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1601FQ",
+              "filing_start_date": "July 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "CORPORATE INCOME TAX",
+              "form_type": "1702",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "0619E",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1601EQ",
+              "filing_start_date": "April 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1604E",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - COMPENSATION",
+              "form_type": "1601C",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "form_type": "1604C",
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of ths"
+              }
+            }
+          ]
+        ]
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 7,
+        "total": 7
+      },
+      "totalFields": 53
+    },
+    "usage": {
+      "ocr": {
+        "duration": 15476.742208,
+        "inputTokens": 3522,
+        "outputTokens": 983,
+        "totalTokens": 4505,
+        "inputCost": 0.00035220000000000005,
+        "outputCost": 0.00039320000000000007,
+        "totalCost": 0.0007454000000000001
+      },
+      "extraction": {
+        "duration": 6857.958082999998,
+        "inputTokens": 1309,
+        "outputTokens": 1164,
+        "totalTokens": 2473,
+        "inputCost": 0.0001309,
+        "outputCost": 0.00046560000000000004,
+        "totalCost": 0.0005965
+      },
+      "duration": 22334.700290999997,
+      "inputTokens": 4831,
+      "outputTokens": 2147,
+      "totalTokens": 6978,
+      "inputCost": 0.0004831000000000001,
+      "outputCost": 0.0008588000000000001,
+      "totalCost": 0.0013419
+    }
+  },
+  {
+    "fileUrl": "images/BIR2303_Coop.jpeg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "form_number",
+        "ocn",
+        "ocn_generation_date",
+        "tin_branch_code",
+        "taxpayer_name",
+        "tin_issuance_date",
+        "registering_office_type",
+        "registered_address",
+        "tax_types"
+      ],
+      "properties": {
+        "form_number": {
+          "type": "string",
+          "description": "The form number of the certificate, which is 2303."
+        },
+        "ocn": {
+          "type": "string",
+          "description": "The OCN (Online Certificate Number)."
+        },
+        "ocn_generation_date": {
+          "type": "string",
+          "description": "The date when the OCN was generated."
+        },
+        "tin_branch_code": {
+          "type": "string",
+          "description": "The Taxpayer Identification Number (TIN) and branch code."
+        },
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "tin_issuance_date": {
+          "type": "string",
+          "description": "The date the TIN was issued."
+        },
+        "registering_office_type": {
+          "type": "string",
+          "description": "The type of registering office, e.g., 'Head Office' or 'Branch'."
+        },
+        "registered_address": {
+          "type": "string",
+          "description": "The full registered address of the taxpayer."
+        },
+        "tax_types": {
+          "type": "array",
+          "description": "List of tax types the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "tax_type",
+              "form_type",
+              "filing_start_date",
+              "filing_frequency",
+              "filing_due_date"
+            ],
+            "properties": {
+              "tax_type": {
+                "type": "string",
+                "description": "Name of the tax type."
+              },
+              "form_type": {
+                "type": "string",
+                "description": "The BIR form type associated with the tax."
+              },
+              "filing_start_date": {
+                "type": "string",
+                "description": "The start date for filing this tax type."
+              },
+              "filing_frequency": {
+                "type": "string",
+                "description": "How often the tax needs to be filed (e.g., MONTHLY, QUARTERLY, ANNUALLY)."
+              },
+              "filing_due_date": {
+                "type": "string",
+                "description": "The deadline for filing the tax."
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.5-flash",
+    "extractionModel": "gemini-2.5-flash",
+    "trueMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>Seal of the Bureau of Internal Revenue - Republic of the Philippines<logo>\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td width=\"33%\"><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td width=\"33%\"><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td width=\"33%\"><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - </td>\n      <td>1604C</td>\n      <td>January 1, </td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the </td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "trueJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - ",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, ",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the "
+        }
+      ]
+    },
+    "predictedMarkdown": "<watermark>BUREAU OF INTERNAL REVENUE</watermark>\n\nBIR FORM\n# 2303\nREVISED: APRIL 2019\n\n[Bureau of Internal Revenue Seal]\n\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC2023000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n| TIN & BRANCH CODE | NAME OF TAXPAYER | TIN ISSUANCE DATE |\n| :---------------- | :---------------- | :------------------ |\n| 604-395-912-00000 | ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC) | January 12, 2022 |\n\n| REGISTERING OFFICE | ☑ Head Office | ☐ Branch |\n| :----------------- | :------------ | :------- |\n\nREGISTERED ADDRESS\nUNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR,\nFOURTH DISTRICT PHILIPPINES\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX -<br>FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>FINAL</td>\n      <td>1604F</td>\n      <td>January 1,<br>2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1,<br>2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1,<br>2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1,<br>2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -<br>COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1,<br>2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -</td>\n      <td>1604C</td>\n      <td>January 1,</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the</td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>1 of 3</page_number>",
+    "predictedJson": {
+      "form_number": "2303",
+      "ocn": "044RC2023000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX -",
+          "form_type": "1604C",
+          "filing_start_date": "January 1,",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the"
+        }
+      ]
+    },
+    "levenshteinDistance": 0.8564,
+    "jsonAccuracy": 0.9057,
+    "jsonDiff": {
+      "ocn": {
+        "__old": "044RC20230000006914",
+        "__new": "044RC2023000006914"
+      },
+      "tax_types": [
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "fullJsonDiff": {
+      "form_number": "2303",
+      "ocn": {
+        "__old": "044RC20230000006914",
+        "__new": "044RC2023000006914"
+      },
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "0619F",
+            "filing_start_date": "June 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1604F",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1601FQ",
+            "filing_start_date": "July 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "CORPORATE INCOME TAX",
+            "form_type": "1702",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "0619E",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1601EQ",
+            "filing_start_date": "April 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1604E",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - COMPENSATION",
+            "form_type": "1601C",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "form_type": "1604C",
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 5,
+      "total": 5
+    },
+    "jsonAccuracyResult": {
+      "score": 0.9057,
+      "jsonDiff": {
+        "ocn": {
+          "__old": "044RC20230000006914",
+          "__new": "044RC2023000006914"
+        },
+        "tax_types": [
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "fullJsonDiff": {
+        "form_number": "2303",
+        "ocn": {
+          "__old": "044RC20230000006914",
+          "__new": "044RC2023000006914"
+        },
+        "ocn_generation_date": "October 12, 2023",
+        "tin_branch_code": "604-395-912-00000",
+        "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+        "tin_issuance_date": "January 12, 2022",
+        "registering_office_type": "Head Office",
+        "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "tax_types": [
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "0619F",
+              "filing_start_date": "June 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1604F",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1601FQ",
+              "filing_start_date": "July 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "CORPORATE INCOME TAX",
+              "form_type": "1702",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "0619E",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1601EQ",
+              "filing_start_date": "April 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1604E",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - COMPENSATION",
+              "form_type": "1601C",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "form_type": "1604C",
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 5,
+        "total": 5
+      },
+      "totalFields": 53
+    },
+    "usage": {
+      "ocr": {
+        "duration": 18602.514042,
+        "inputTokens": 3522,
+        "outputTokens": 1074,
+        "totalTokens": 4596,
+        "inputCost": 0.0010566,
+        "outputCost": 0.002685,
+        "totalCost": 0.0037416
+      },
+      "extraction": {
+        "duration": 12893.600917000003,
+        "inputTokens": 1400,
+        "outputTokens": 1164,
+        "totalTokens": 2564,
+        "inputCost": 0.00042,
+        "outputCost": 0.00291,
+        "totalCost": 0.0033299999999999996
+      },
+      "duration": 31496.114959000002,
+      "inputTokens": 4922,
+      "outputTokens": 2238,
+      "totalTokens": 7160,
+      "inputCost": 0.0014766,
+      "outputCost": 0.005594999999999999,
+      "totalCost": 0.007071599999999999
+    }
+  },
+  {
+    "fileUrl": "images/BIR2303_Coop.jpeg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "form_number",
+        "ocn",
+        "ocn_generation_date",
+        "tin_branch_code",
+        "taxpayer_name",
+        "tin_issuance_date",
+        "registering_office_type",
+        "registered_address",
+        "tax_types"
+      ],
+      "properties": {
+        "form_number": {
+          "type": "string",
+          "description": "The form number of the certificate, which is 2303."
+        },
+        "ocn": {
+          "type": "string",
+          "description": "The OCN (Online Certificate Number)."
+        },
+        "ocn_generation_date": {
+          "type": "string",
+          "description": "The date when the OCN was generated."
+        },
+        "tin_branch_code": {
+          "type": "string",
+          "description": "The Taxpayer Identification Number (TIN) and branch code."
+        },
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "tin_issuance_date": {
+          "type": "string",
+          "description": "The date the TIN was issued."
+        },
+        "registering_office_type": {
+          "type": "string",
+          "description": "The type of registering office, e.g., 'Head Office' or 'Branch'."
+        },
+        "registered_address": {
+          "type": "string",
+          "description": "The full registered address of the taxpayer."
+        },
+        "tax_types": {
+          "type": "array",
+          "description": "List of tax types the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "tax_type",
+              "form_type",
+              "filing_start_date",
+              "filing_frequency",
+              "filing_due_date"
+            ],
+            "properties": {
+              "tax_type": {
+                "type": "string",
+                "description": "Name of the tax type."
+              },
+              "form_type": {
+                "type": "string",
+                "description": "The BIR form type associated with the tax."
+              },
+              "filing_start_date": {
+                "type": "string",
+                "description": "The start date for filing this tax type."
+              },
+              "filing_frequency": {
+                "type": "string",
+                "description": "How often the tax needs to be filed (e.g., MONTHLY, QUARTERLY, ANNUALLY)."
+              },
+              "filing_due_date": {
+                "type": "string",
+                "description": "The deadline for filing the tax."
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-3-flash-preview",
+    "extractionModel": "gemini-3-flash-preview",
+    "trueMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>Seal of the Bureau of Internal Revenue - Republic of the Philippines<logo>\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td width=\"33%\"><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td width=\"33%\"><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td width=\"33%\"><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - </td>\n      <td>1604C</td>\n      <td>January 1, </td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the </td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "trueJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - ",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, ",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the "
+        }
+      ]
+    },
+    "predictedMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>BUREAU OF INTERNAL REVENUE<logo>\n\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -</td>\n      <td>1604C</td>\n      <td>January 1,</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the</td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "predictedJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the"
+        }
+      ]
+    },
+    "levenshteinDistance": 0.9624,
+    "jsonAccuracy": 0.9245,
+    "jsonDiff": {
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX - COMPENSATION"
+            },
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1, 2023"
+            },
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "fullJsonDiff": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "0619F",
+            "filing_start_date": "June 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1604F",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1601FQ",
+            "filing_start_date": "July 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "CORPORATE INCOME TAX",
+            "form_type": "1702",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "0619E",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1601EQ",
+            "filing_start_date": "April 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1604E",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - COMPENSATION",
+            "form_type": "1601C",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX - COMPENSATION"
+            },
+            "form_type": "1604C",
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1, 2023"
+            },
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 4,
+      "total": 4
+    },
+    "jsonAccuracyResult": {
+      "score": 0.9245,
+      "jsonDiff": {
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX - COMPENSATION"
+              },
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1, 2023"
+              },
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "fullJsonDiff": {
+        "form_number": "2303",
+        "ocn": "044RC20230000006914",
+        "ocn_generation_date": "October 12, 2023",
+        "tin_branch_code": "604-395-912-00000",
+        "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+        "tin_issuance_date": "January 12, 2022",
+        "registering_office_type": "Head Office",
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "0619F",
+              "filing_start_date": "June 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1604F",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1601FQ",
+              "filing_start_date": "July 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "CORPORATE INCOME TAX",
+              "form_type": "1702",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "0619E",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1601EQ",
+              "filing_start_date": "April 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1604E",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - COMPENSATION",
+              "form_type": "1601C",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX - COMPENSATION"
+              },
+              "form_type": "1604C",
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1, 2023"
+              },
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 4,
+        "total": 4
+      },
+      "totalFields": 53
+    },
+    "usage": {
+      "ocr": {
+        "duration": 51318.3205,
+        "inputTokens": 1260,
+        "outputTokens": 1050,
+        "totalTokens": 2310,
+        "inputCost": 0.000189,
+        "outputCost": 0.00063,
+        "totalCost": 0.0008190000000000001
+      },
+      "extraction": {
+        "duration": 18726.838749999995,
+        "inputTokens": 1402,
+        "outputTokens": 1172,
+        "totalTokens": 2574,
+        "inputCost": 0.0002103,
+        "outputCost": 0.0007032,
+        "totalCost": 0.0009134999999999999
+      },
+      "duration": 70045.15925,
+      "inputTokens": 2662,
+      "outputTokens": 2222,
+      "totalTokens": 4884,
+      "inputCost": 0.0003993,
+      "outputCost": 0.0013332,
+      "totalCost": 0.0017325
+    }
+  },
+  {
+    "fileUrl": "images/BIR2303_Coop.jpeg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "form_number",
+        "ocn",
+        "ocn_generation_date",
+        "tin_branch_code",
+        "taxpayer_name",
+        "tin_issuance_date",
+        "registering_office_type",
+        "registered_address",
+        "tax_types"
+      ],
+      "properties": {
+        "form_number": {
+          "type": "string",
+          "description": "The form number of the certificate, which is 2303."
+        },
+        "ocn": {
+          "type": "string",
+          "description": "The OCN (Online Certificate Number)."
+        },
+        "ocn_generation_date": {
+          "type": "string",
+          "description": "The date when the OCN was generated."
+        },
+        "tin_branch_code": {
+          "type": "string",
+          "description": "The Taxpayer Identification Number (TIN) and branch code."
+        },
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "tin_issuance_date": {
+          "type": "string",
+          "description": "The date the TIN was issued."
+        },
+        "registering_office_type": {
+          "type": "string",
+          "description": "The type of registering office, e.g., 'Head Office' or 'Branch'."
+        },
+        "registered_address": {
+          "type": "string",
+          "description": "The full registered address of the taxpayer."
+        },
+        "tax_types": {
+          "type": "array",
+          "description": "List of tax types the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "tax_type",
+              "form_type",
+              "filing_start_date",
+              "filing_frequency",
+              "filing_due_date"
+            ],
+            "properties": {
+              "tax_type": {
+                "type": "string",
+                "description": "Name of the tax type."
+              },
+              "form_type": {
+                "type": "string",
+                "description": "The BIR form type associated with the tax."
+              },
+              "filing_start_date": {
+                "type": "string",
+                "description": "The start date for filing this tax type."
+              },
+              "filing_frequency": {
+                "type": "string",
+                "description": "How often the tax needs to be filed (e.g., MONTHLY, QUARTERLY, ANNUALLY)."
+              },
+              "filing_due_date": {
+                "type": "string",
+                "description": "The deadline for filing the tax."
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.5-pro",
+    "extractionModel": "gemini-2.5-pro",
+    "trueMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>Seal of the Bureau of Internal Revenue - Republic of the Philippines<logo>\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td width=\"33%\"><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td width=\"33%\"><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td width=\"33%\"><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - </td>\n      <td>1604C</td>\n      <td>January 1, </td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the </td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "trueJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - ",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, ",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the "
+        }
+      ]
+    },
+    "predictedMarkdown": "<watermark>BUREAU OF INTERNAL REVENUE</watermark>\n\nBIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>REPUBLIKA NG PILIPINAS</logo>\n**REPUBLIKA NG PILIPINAS**\n**KAGAWARAN NG PANANALAPI**\n**KAWANIHAN NG RENTAS INTERNAS**\n**REVENUE REGION NO. 08B - SOUTH NCR**\n**REVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS**\n\n**OCN: 044RC20230000006914**\n**Date OCN Generated: October 12, 2023**\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td><b>TIN & BRANCH CODE</b></td>\n    <td><b>NAME OF TAXPAYER</b></td>\n    <td><b>TIN ISSUANCE DATE</b></td>\n  </tr>\n  <tr>\n    <td>604-395-912-00000</td>\n    <td>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERING OFFICE</b></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\">☑ Head Office ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\">UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX -</td>\n      <td>1604C</td>\n      <td>January 1,</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the</td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3</page_number>",
+    "predictedJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX -",
+          "form_type": "1604C",
+          "filing_start_date": "January 1,",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the"
+        }
+      ]
+    },
+    "levenshteinDistance": 0.8881,
+    "jsonAccuracy": 0.8868,
+    "jsonDiff": {
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          "~",
+          {
+            "filing_due_date": {
+              "__old": "On or before the 10th day following the month in which withholding was made.",
+              "__new": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          }
+        ],
+        [
+          "~",
+          {
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "fullJsonDiff": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          "~",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "0619F",
+            "filing_start_date": "June 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": {
+              "__old": "On or before the 10th day following the month in which withholding was made.",
+              "__new": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1604F",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+              "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+            }
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1601FQ",
+            "filing_start_date": "July 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "CORPORATE INCOME TAX",
+            "form_type": "1702",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "0619E",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1601EQ",
+            "filing_start_date": "April 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1604E",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - COMPENSATION",
+            "form_type": "1601C",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "form_type": "1604C",
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 6,
+      "total": 6
+    },
+    "jsonAccuracyResult": {
+      "score": 0.8868,
+      "jsonDiff": {
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            "~",
+            {
+              "filing_due_date": {
+                "__old": "On or before the 10th day following the month in which withholding was made.",
+                "__new": "On or before the 10th day of the month following the month in which withholding was made."
+              }
+            }
+          ],
+          [
+            "~",
+            {
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "fullJsonDiff": {
+        "form_number": "2303",
+        "ocn": "044RC20230000006914",
+        "ocn_generation_date": "October 12, 2023",
+        "tin_branch_code": "604-395-912-00000",
+        "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+        "tin_issuance_date": "January 12, 2022",
+        "registering_office_type": "Head Office",
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            "~",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "0619F",
+              "filing_start_date": "June 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": {
+                "__old": "On or before the 10th day following the month in which withholding was made.",
+                "__new": "On or before the 10th day of the month following the month in which withholding was made."
+              }
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1604F",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued",
+                "__new": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued."
+              }
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1601FQ",
+              "filing_start_date": "July 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "CORPORATE INCOME TAX",
+              "form_type": "1702",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "0619E",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1601EQ",
+              "filing_start_date": "April 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1604E",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - COMPENSATION",
+              "form_type": "1601C",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "form_type": "1604C",
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 6,
+        "total": 6
+      },
+      "totalFields": 53
+    },
+    "usage": {
+      "ocr": {
+        "duration": 50489.927292,
+        "inputTokens": 3522,
+        "outputTokens": 1143,
+        "totalTokens": 4665,
+        "inputCost": 0.0044025,
+        "outputCost": 0.01143,
+        "totalCost": 0.0158325
+      },
+      "extraction": {
+        "duration": 20786.473958000002,
+        "inputTokens": 1469,
+        "outputTokens": 1168,
+        "totalTokens": 2637,
+        "inputCost": 0.00183625,
+        "outputCost": 0.01168,
+        "totalCost": 0.013516249999999999
+      },
+      "duration": 71276.40125,
+      "inputTokens": 4991,
+      "outputTokens": 2311,
+      "totalTokens": 7302,
+      "inputCost": 0.00623875,
+      "outputCost": 0.02311,
+      "totalCost": 0.02934875
+    }
+  },
+  {
+    "fileUrl": "images/BIR2303_Coop.jpeg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "form_number",
+        "ocn",
+        "ocn_generation_date",
+        "tin_branch_code",
+        "taxpayer_name",
+        "tin_issuance_date",
+        "registering_office_type",
+        "registered_address",
+        "tax_types"
+      ],
+      "properties": {
+        "form_number": {
+          "type": "string",
+          "description": "The form number of the certificate, which is 2303."
+        },
+        "ocn": {
+          "type": "string",
+          "description": "The OCN (Online Certificate Number)."
+        },
+        "ocn_generation_date": {
+          "type": "string",
+          "description": "The date when the OCN was generated."
+        },
+        "tin_branch_code": {
+          "type": "string",
+          "description": "The Taxpayer Identification Number (TIN) and branch code."
+        },
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "tin_issuance_date": {
+          "type": "string",
+          "description": "The date the TIN was issued."
+        },
+        "registering_office_type": {
+          "type": "string",
+          "description": "The type of registering office, e.g., 'Head Office' or 'Branch'."
+        },
+        "registered_address": {
+          "type": "string",
+          "description": "The full registered address of the taxpayer."
+        },
+        "tax_types": {
+          "type": "array",
+          "description": "List of tax types the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "tax_type",
+              "form_type",
+              "filing_start_date",
+              "filing_frequency",
+              "filing_due_date"
+            ],
+            "properties": {
+              "tax_type": {
+                "type": "string",
+                "description": "Name of the tax type."
+              },
+              "form_type": {
+                "type": "string",
+                "description": "The BIR form type associated with the tax."
+              },
+              "filing_start_date": {
+                "type": "string",
+                "description": "The start date for filing this tax type."
+              },
+              "filing_frequency": {
+                "type": "string",
+                "description": "How often the tax needs to be filed (e.g., MONTHLY, QUARTERLY, ANNUALLY)."
+              },
+              "filing_due_date": {
+                "type": "string",
+                "description": "The deadline for filing the tax."
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-3-pro-preview",
+    "extractionModel": "gemini-3-pro-preview",
+    "trueMarkdown": "BIR FORM\n# 2303\nREVISED: APRIL 2019\n\n<logo>Seal of the Bureau of Internal Revenue - Republic of the Philippines<logo>\nREPUBLIKA NG PILIPINAS\nKAGAWARAN NG PANANALAPI\nKAWANIHAN NG RENTAS INTERNAS\nREVENUE REGION NO. 08B - SOUTH NCR\nREVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS\n\nOCN: 044RC20230000006914\nDate OCN Generated: October 12, 2023\n\n# CERTIFICATE OF REGISTRATION\n\n<table>\n  <tr>\n    <td width=\"33%\"><b>TIN & BRANCH CODE</b><br>604-395-912-00000</td>\n    <td width=\"33%\"><b>NAME OF TAXPAYER</b><br>ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td width=\"33%\"><b>TIN ISSUANCE DATE</b><br>January 12, 2022</td>\n  </tr>\n  <tr>\n    <td><b>REGISTERING OFFICE</b></td>\n    <td colspan=\"2\">☑ Head Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>REGISTERED ADDRESS</b><br>UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table>\n  <thead>\n    <tr>\n      <th>TAX TYPES</th>\n      <th>FORM TYPES</th>\n      <th>FILING START DATE</th>\n      <th>FILING FREQUENCY</th>\n      <th>FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>0619F</td>\n      <td>June 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1604F</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - FINAL</td>\n      <td>1601FQ</td>\n      <td>July 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>CORPORATE INCOME TAX</td>\n      <td>1702</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>0619E</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1601EQ</td>\n      <td>April 1, 2022</td>\n      <td>QUARTERLY</td>\n      <td>Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td>1604E</td>\n      <td>January 1, 2023</td>\n      <td>ANNUALLY</td>\n      <td>On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - COMPENSATION</td>\n      <td>1601C</td>\n      <td>February 1, 2022</td>\n      <td>MONTHLY</td>\n      <td>On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td>WITHHOLDING TAX - </td>\n      <td>1604C</td>\n      <td>January 1, </td>\n      <td>ANNUALLY</td>\n      <td>On or before January 31 of the </td>\n    </tr>\n  </tbody>\n</table>\n\n<page_number>Page 1 of 3<page_number>",
+    "trueJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - ",
+          "form_type": "1604C",
+          "filing_start_date": "January 1, ",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the "
+        }
+      ]
+    },
+    "predictedMarkdown": "<watermark>BUREAU OF INTERNAL REVENUE<watermark>\n\n**BIR FORM**\n# **2303**\nREVISED: APRIL 2019\n\n<logo>Republic of the Philippines Department of Finance Bureau of Internal Revenue Seal<logo>\n\n**REPUBLIKA NG PILIPINAS**\n**KAGAWARAN NG PANANALAPI**\n**KAWANIHAN NG RENTAS INTERNAS**\n**REVENUE REGION NO. 08B - SOUTH NCR**\n**REVENUE DISTRICT OFFICE NO. 044 - TAGUIG-PATEROS**\n\n**OCN: 044RC20230000006914**\n**Date OCN Generated: October 12, 2023**\n\n# CERTIFICATE OF REGISTRATION\n\n<table border=\"1\" style=\"width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 10pt;\">\n  <tr>\n    <td style=\"width: 25%; background-color: #e0f2f1;\"><strong>TIN & BRANCH CODE</strong></td>\n    <td style=\"width: 50%; background-color: #e0f2f1;\"><strong>NAME OF TAXPAYER</strong></td>\n    <td style=\"width: 25%; background-color: #e0f2f1;\"><strong>TIN ISSUANCE DATE</strong></td>\n  </tr>\n  <tr>\n    <td style=\"text-align: center;\">604-395-912-00000</td>\n    <td style=\"text-align: center;\">ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)</td>\n    <td style=\"text-align: center;\">January 12, 2022</td>\n  </tr>\n  <tr>\n    <td style=\"background-color: #e0f2f1;\"><strong>REGISTERING OFFICE</strong></td>\n    <td style=\"text-align: center;\">☑ Head Office</td>\n    <td style=\"text-align: center;\">☐ Branch</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\" style=\"background-color: #e0f2f1;\"><strong>REGISTERED ADDRESS</strong></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\" style=\"padding: 5px;\">UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES</td>\n  </tr>\n</table>\n\n<br>\n\n<table border=\"1\" style=\"width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 9pt;\">\n  <thead>\n    <tr style=\"background-color: #e0f2f1; text-align: center;\">\n      <th style=\"padding: 5px;\">TAX TYPES</th>\n      <th style=\"padding: 5px;\">FORM TYPES</th>\n      <th style=\"padding: 5px;\">FILING START DATE</th>\n      <th style=\"padding: 5px;\">FILING FREQUENCY</th>\n      <th style=\"padding: 5px;\">FILING DUE DATE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - FINAL</td>\n      <td style=\"text-align: center;\">0619F</td>\n      <td style=\"text-align: center;\">June 1, 2022</td>\n      <td style=\"text-align: center;\">MONTHLY</td>\n      <td style=\"padding: 5px;\">On or before the 10th day following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - FINAL</td>\n      <td style=\"text-align: center;\">1604F</td>\n      <td style=\"text-align: center;\">January 1, 2023</td>\n      <td style=\"text-align: center;\">ANNUALLY</td>\n      <td style=\"padding: 5px;\">On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - FINAL</td>\n      <td style=\"text-align: center;\">1601FQ</td>\n      <td style=\"text-align: center;\">July 1, 2022</td>\n      <td style=\"text-align: center;\">QUARTERLY</td>\n      <td style=\"padding: 5px;\">Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">CORPORATE INCOME TAX</td>\n      <td style=\"text-align: center;\">1702</td>\n      <td style=\"text-align: center;\">January 1, 2023</td>\n      <td style=\"text-align: center;\">ANNUALLY</td>\n      <td style=\"padding: 5px;\">On or before the 15th day of the 4th month following the close of the taxpayer's taxable year.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td style=\"text-align: center;\">0619E</td>\n      <td style=\"text-align: center;\">February 1, 2022</td>\n      <td style=\"text-align: center;\">MONTHLY</td>\n      <td style=\"padding: 5px;\">On or before the 10th day of the month following the month in which withholding was made.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td style=\"text-align: center;\">1601EQ</td>\n      <td style=\"text-align: center;\">April 1, 2022</td>\n      <td style=\"text-align: center;\">QUARTERLY</td>\n      <td style=\"padding: 5px;\">Not later than the last day of the month following the close of the quarter during which withholding was made.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - EXPANDED/OTHERS</td>\n      <td style=\"text-align: center;\">1604E</td>\n      <td style=\"text-align: center;\">January 1, 2023</td>\n      <td style=\"text-align: center;\">ANNUALLY</td>\n      <td style=\"padding: 5px;\">On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX - COMPENSATION</td>\n      <td style=\"text-align: center;\">1601C</td>\n      <td style=\"text-align: center;\">February 1, 2022</td>\n      <td style=\"text-align: center;\">MONTHLY</td>\n      <td style=\"padding: 5px;\">On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 5px;\">WITHHOLDING TAX -</td>\n      <td style=\"text-align: center;\">1604C</td>\n      <td style=\"text-align: center;\">January 1,</td>\n      <td style=\"text-align: center;\">ANNUALLY</td>\n      <td style=\"padding: 5px;\">On or before January 31 of the</td>\n    </tr>\n  </tbody>\n</table>\n\n<div style=\"text-align: center; margin-top: 10px;\">\n  <page_number>Page 1 of 3</page_number>\n</div>",
+    "predictedJson": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+      "tax_types": [
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "0619F",
+          "filing_start_date": "June 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1604F",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - FINAL",
+          "form_type": "1601FQ",
+          "filing_start_date": "July 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "CORPORATE INCOME TAX",
+          "form_type": "1702",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "0619E",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1601EQ",
+          "filing_start_date": "April 1, 2022",
+          "filing_frequency": "QUARTERLY",
+          "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+          "form_type": "1604E",
+          "filing_start_date": "January 1, 2023",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX - COMPENSATION",
+          "form_type": "1601C",
+          "filing_start_date": "February 1, 2022",
+          "filing_frequency": "MONTHLY",
+          "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+        },
+        {
+          "tax_type": "WITHHOLDING TAX -",
+          "form_type": "1604C",
+          "filing_start_date": "January 1,",
+          "filing_frequency": "ANNUALLY",
+          "filing_due_date": "On or before January 31 of the"
+        }
+      ]
+    },
+    "levenshteinDistance": 0.6014,
+    "jsonAccuracy": 0.9245,
+    "jsonDiff": {
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "fullJsonDiff": {
+      "form_number": "2303",
+      "ocn": "044RC20230000006914",
+      "ocn_generation_date": "October 12, 2023",
+      "tin_branch_code": "604-395-912-00000",
+      "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+      "tin_issuance_date": "January 12, 2022",
+      "registering_office_type": "Head Office",
+      "registered_address": {
+        "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+        "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+      },
+      "tax_types": [
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "0619F",
+            "filing_start_date": "June 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1604F",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - FINAL",
+            "form_type": "1601FQ",
+            "filing_start_date": "July 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "CORPORATE INCOME TAX",
+            "form_type": "1702",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "0619E",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1601EQ",
+            "filing_start_date": "April 1, 2022",
+            "filing_frequency": "QUARTERLY",
+            "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+            "form_type": "1604E",
+            "filing_start_date": "January 1, 2023",
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+          }
+        ],
+        [
+          " ",
+          {
+            "tax_type": "WITHHOLDING TAX - COMPENSATION",
+            "form_type": "1601C",
+            "filing_start_date": "February 1, 2022",
+            "filing_frequency": "MONTHLY",
+            "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+          }
+        ],
+        [
+          "~",
+          {
+            "tax_type": {
+              "__old": "WITHHOLDING TAX - ",
+              "__new": "WITHHOLDING TAX -"
+            },
+            "form_type": "1604C",
+            "filing_start_date": {
+              "__old": "January 1, ",
+              "__new": "January 1,"
+            },
+            "filing_frequency": "ANNUALLY",
+            "filing_due_date": {
+              "__old": "On or before January 31 of the ",
+              "__new": "On or before January 31 of the"
+            }
+          }
+        ]
+      ]
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 4,
+      "total": 4
+    },
+    "jsonAccuracyResult": {
+      "score": 0.9245,
+      "jsonDiff": {
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "fullJsonDiff": {
+        "form_number": "2303",
+        "ocn": "044RC20230000006914",
+        "ocn_generation_date": "October 12, 2023",
+        "tin_branch_code": "604-395-912-00000",
+        "taxpayer_name": "ONLINE FOOD VENDORS MARKETING COOPERATIVE (OFVMC)",
+        "tin_issuance_date": "January 12, 2022",
+        "registering_office_type": "Head Office",
+        "registered_address": {
+          "__old": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST, BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES",
+          "__new": "UNIT 2B2 SEIBU TOWER 6TH AVE COR 24TH ST. BGC FORT BONIFACIO 1634 TAGUIG CITY NCR, FOURTH DISTRICT PHILIPPINES"
+        },
+        "tax_types": [
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "0619F",
+              "filing_start_date": "June 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1604F",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before January 31 of the year following the calendar year in which the income payments subject to final withholding taxes were paid or accrued"
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - FINAL",
+              "form_type": "1601FQ",
+              "filing_start_date": "July 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "CORPORATE INCOME TAX",
+              "form_type": "1702",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before the 15th day of the 4th month following the close of the taxpayer's taxable year."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "0619E",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month in which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1601EQ",
+              "filing_start_date": "April 1, 2022",
+              "filing_frequency": "QUARTERLY",
+              "filing_due_date": "Not later than the last day of the month following the close of the quarter during which withholding was made."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - EXPANDED/OTHERS",
+              "form_type": "1604E",
+              "filing_start_date": "January 1, 2023",
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": "On or before March 1 of the year following the calendar year in which the income payments subject to expanded withholding taxes or exempt from withholding tax were paid or accrued."
+            }
+          ],
+          [
+            " ",
+            {
+              "tax_type": "WITHHOLDING TAX - COMPENSATION",
+              "form_type": "1601C",
+              "filing_start_date": "February 1, 2022",
+              "filing_frequency": "MONTHLY",
+              "filing_due_date": "On or before the 10th day of the month following the month when the withholding was made except for taxes withheld for December which shall be filed and paid/remitted on or before January 15 of the succeeding year."
+            }
+          ],
+          [
+            "~",
+            {
+              "tax_type": {
+                "__old": "WITHHOLDING TAX - ",
+                "__new": "WITHHOLDING TAX -"
+              },
+              "form_type": "1604C",
+              "filing_start_date": {
+                "__old": "January 1, ",
+                "__new": "January 1,"
+              },
+              "filing_frequency": "ANNUALLY",
+              "filing_due_date": {
+                "__old": "On or before January 31 of the ",
+                "__new": "On or before January 31 of the"
+              }
+            }
+          ]
+        ]
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 4,
+        "total": 4
+      },
+      "totalFields": 53
+    },
+    "usage": {
+      "ocr": {
+        "duration": 60932.141375,
+        "inputTokens": 1260,
+        "outputTokens": 1826,
+        "totalTokens": 3086,
+        "inputCost": 0.001575,
+        "outputCost": 0.00913,
+        "totalCost": 0.010705
+      },
+      "extraction": {
+        "duration": 32355.61941700001,
+        "inputTokens": 2178,
+        "outputTokens": 1165,
+        "totalTokens": 3343,
+        "inputCost": 0.0027225,
+        "outputCost": 0.005825,
+        "totalCost": 0.0085475
+      },
+      "duration": 93287.76079200002,
+      "inputTokens": 3438,
+      "outputTokens": 2991,
+      "totalTokens": 6429,
+      "inputCost": 0.0042975,
+      "outputCost": 0.014955,
+      "totalCost": 0.0192525
+    }
+  }
+]

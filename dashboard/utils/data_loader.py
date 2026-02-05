@@ -19,6 +19,8 @@ class BenchmarkRunMetadata(TypedDict):
     total_documents: Optional[int]
     created_at: Optional[str]
     completed_at: Optional[str]
+    doc_name: Optional[str]
+    run_name: str
 
 
 def load_run_list_from_folder(
@@ -30,7 +32,7 @@ def load_run_list_from_folder(
     runs = []
 
     for dir_path in result_dirs:
-        timestamp = dir_path.name
+        doc_name, timestamp = dir_path.name.split("--")
         json_path = dir_path / "results.json"
         if json_path.exists():
             runs.append(
@@ -42,6 +44,8 @@ def load_run_list_from_folder(
                     "total_documents": None,
                     "created_at": format_timestamp(timestamp),
                     "completed_at": format_timestamp(timestamp),
+                    "doc_name": doc_name,
+                    "run_name": dir_path.name
                 }
             )
 
@@ -99,10 +103,10 @@ def load_run_list_from_db() -> List[BenchmarkRunMetadata]:
 
 
 def load_results_for_run_from_folder(
-    timestamp: str, results_dir: str = "results"
+    timestamp: str, results_dir: str = "results", run_name: str = "Unknown"
 ) -> Dict[str, Any]:
     """Load results for a specific run from folder"""
-    results_path = Path(results_dir) / timestamp / "results.json"
+    results_path = Path(results_dir) / run_name / "results.json"
     if results_path.exists():
         with open(results_path) as f:
             results = json.load(f)
@@ -119,6 +123,7 @@ def load_results_for_run_from_folder(
                 "total_documents": total_documents,
                 "created_at": format_timestamp(timestamp),
                 "completed_at": format_timestamp(timestamp),
+                "run_name": run_name
             }
     return {}
 
@@ -304,12 +309,12 @@ def load_run_list() -> List[BenchmarkRunMetadata]:
 
 
 def load_results_for_run(
-    timestamp: str, include_metrics_only: bool = True
+    timestamp: str, include_metrics_only: bool = True, run_name: str = "Unknown"
 ) -> Dict[str, Any]:
     """Load results for a specific run from either database or local files"""
     if os.getenv("DATABASE_URL"):
         return load_results_for_run_from_db(timestamp, include_metrics_only)
-    return load_results_for_run_from_folder(timestamp)
+    return load_results_for_run_from_folder(timestamp, "results", run_name)
 
 
 def load_one_result(timestamp: str, id: str) -> Dict[str, Any]:

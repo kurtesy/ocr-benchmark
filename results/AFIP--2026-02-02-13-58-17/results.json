@@ -1,0 +1,1919 @@
+[
+  {
+    "fileUrl": "images/Afip vigente (1)_page-0001.jpg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "taxpayer_name",
+        "cuit",
+        "fiscal_address",
+        "registered_taxes",
+        "main_activity",
+        "validity"
+      ],
+      "properties": {
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "cuit": {
+          "type": "string",
+          "description": "The taxpayer's Unique Tax Identification Code (Clave Única de Identificación Tributaria)."
+        },
+        "fiscal_address": {
+          "type": "object",
+          "required": [
+            "street_address",
+            "city",
+            "postal_code"
+          ],
+          "properties": {
+            "street_address": {
+              "type": "string",
+              "description": "The street and number of the fiscal address."
+            },
+            "city": {
+              "type": "string",
+              "description": "The city of the fiscal address."
+            },
+            "postal_code": {
+              "type": "string",
+              "description": "The postal code of the fiscal address."
+            }
+          }
+        },
+        "registered_taxes": {
+          "type": "array",
+          "description": "List of taxes and regimes the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "start_date"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the tax or regime."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "Start date of the registration for the tax (MM-YYYY)."
+              }
+            }
+          }
+        },
+        "main_activity": {
+          "type": "object",
+          "required": [
+            "description",
+            "start_month"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Description of the main economic activity."
+            },
+            "start_month": {
+              "type": "string",
+              "description": "Start month of the activity (MM/YYYY)."
+            }
+          }
+        },
+        "validity": {
+          "type": "object",
+          "required": [
+            "start_date",
+            "end_date"
+          ],
+          "properties": {
+            "start_date": {
+              "type": "string",
+              "description": "The start date of the certificate's validity (DD-MM-YYYY)."
+            },
+            "end_date": {
+              "type": "string",
+              "description": "The end date of the certificate's validity (DD-MM-YYYY)."
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.0-flash",
+    "extractionModel": "gemini-2.0-flash",
+    "trueMarkdown": "22/12/25, 10:05 a.m.  \nFormulario de Impresión de Constancia de Inscripción\n\n---\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"width: 30%; vertical-align: top;\">\n      <h1><logo>ARCA<logo></h1>\n    </td>\n    <td style=\"width: 70%; text-align: center; vertical-align: middle;\">\n      AGENCIA DE RECAUDACION Y CONTROL ADUANERO<br>\n      <b>CONSTANCIA DE INSCRIPCION</b>\n    </td>\n  </tr>\n</table>\n\n<table style=\"width: 100%; border: 1px solid black; border-collapse: collapse;\">\n  <tr>\n    <td style=\"padding: 5px;\">\n      <b>OJEDA OZUNA FIDELINA CUIT: 27-93983005-2</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td style=\"text-align: right;\">11-2025</td>\n  </tr>\n</table>\n\n*************************************************  \nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br><br><br><br><br><br>\n\nEsta constancia no da cuenta de la inscripción en:\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.**\n- **Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.**\n- **Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n- **Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n\n<table style=\"width: 100%; border-collapse: collapse; border: 1px solid black;\">\n  <tr style=\"background-color: #f0f0f0;\">\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp; Mes de inicio: <i>01/2024</i>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Secundaria(s):\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Mes de cierre ejercicio comercial: &nbsp;<b>12</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"text-align: center;\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td style=\"border: 1px solid black; padding: 5px;\">\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%;\">\n  <tr>\n    <td>Vigencia de la presente constancia: <b>22-12-2025</b> a <b>21-01-2026</b></td>\n    <td style=\"text-align: right;\">Hora <b>10:04:23</b> Verificador <b>109962093530</b></td>\n  </tr>\n</table>\n\n<br>\n\n<div style=\"text-align: center; font-weight: bold; font-size: 1.2em;\">\nARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA\n</div>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n<br><br>\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<div style=\"text-align: right;\">\n<page_number>1/1<page_number>\n</div>",
+    "trueJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "predictedMarkdown": "22/12/25, 10:05 a.m.\n<logo>ARCA</logo>\nFormulario de Impresión de Constancia de Inscripción\n\nAGENCIA DE RECAUDACION Y CONTROL ADUANERO\nCONSTANCIA DE INSCRIPCION\n\nOJEDA OZUNA FIDELINA CUIT: 27-93983005-2\n\nIMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA\nGANANCIAS PERSONAS FISICAS 01-2025\nIVA 01-2025\nREG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000 01-2025\nREG. SEG. SOCIAL EMPLEADOR 11-2025\n**********************************\nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha\nde emision de la presente constancia.\n\nEsta constancia no da cuenta de la inscripción en:\n- Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra\ninscripto.\n- Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley,\nse acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n- Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n- Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\nACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA\nActividad principal: 561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO Mes de inicio: 01/2024\nSecundaria(s):\nMes de cierre ejercicio comercial: 12\n\nJUNIN 1091\n1113-CIUDAD AUTONOMA BUENOS AIRES\nDOMICILIO FISCAL - ARCA\n\nVigencia de la presente constancia: 22-12-2025 a 21-01-2026 Hora 10:04:23 Verificador 109962093530\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n<page_number>1/1</page_number>\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n",
+    "predictedJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "1113-CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": ""
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "levenshteinDistance": 0.4603,
+    "jsonAccuracy": 0.7647,
+    "jsonDiff": {
+      "fiscal_address": {
+        "city": {
+          "__old": "CIUDAD AUTONOMA BUENOS AIRES",
+          "__new": "1113-CIUDAD AUTONOMA BUENOS AIRES"
+        },
+        "postal_code": {
+          "__old": "1113",
+          "__new": ""
+        }
+      },
+      "registered_taxes": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            }
+          }
+        ],
+        [
+          " "
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        }
+      }
+    },
+    "fullJsonDiff": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": {
+          "__old": "CIUDAD AUTONOMA BUENOS AIRES",
+          "__new": "1113-CIUDAD AUTONOMA BUENOS AIRES"
+        },
+        "postal_code": {
+          "__old": "1113",
+          "__new": ""
+        }
+      },
+      "registered_taxes": [
+        [
+          " ",
+          {
+            "name": "GANANCIAS PERSONAS FISICAS",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "IVA",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            },
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "REG. SEG. SOCIAL EMPLEADOR",
+            "start_date": "11-2025"
+          }
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        },
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 4,
+      "total": 4
+    },
+    "jsonAccuracyResult": {
+      "score": 0.7647,
+      "jsonDiff": {
+        "fiscal_address": {
+          "city": {
+            "__old": "CIUDAD AUTONOMA BUENOS AIRES",
+            "__new": "1113-CIUDAD AUTONOMA BUENOS AIRES"
+          },
+          "postal_code": {
+            "__old": "1113",
+            "__new": ""
+          }
+        },
+        "registered_taxes": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              }
+            }
+          ],
+          [
+            " "
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          }
+        }
+      },
+      "fullJsonDiff": {
+        "taxpayer_name": "OJEDA OZUNA FIDELINA",
+        "cuit": "27-93983005-2",
+        "fiscal_address": {
+          "street_address": "JUNIN 1091",
+          "city": {
+            "__old": "CIUDAD AUTONOMA BUENOS AIRES",
+            "__new": "1113-CIUDAD AUTONOMA BUENOS AIRES"
+          },
+          "postal_code": {
+            "__old": "1113",
+            "__new": ""
+          }
+        },
+        "registered_taxes": [
+          [
+            " ",
+            {
+              "name": "GANANCIAS PERSONAS FISICAS",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "IVA",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              },
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "REG. SEG. SOCIAL EMPLEADOR",
+              "start_date": "11-2025"
+            }
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          },
+          "start_month": "01/2024"
+        },
+        "validity": {
+          "start_date": "22-12-2025",
+          "end_date": "21-01-2026"
+        }
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 4,
+        "total": 4
+      },
+      "totalFields": 17
+    },
+    "usage": {
+      "ocr": {
+        "duration": 6152.280000000001,
+        "inputTokens": 1974,
+        "outputTokens": 684,
+        "totalTokens": 2658,
+        "inputCost": 0.0001974,
+        "outputCost": 0.00027360000000000004,
+        "totalCost": 0.00047100000000000006
+      },
+      "extraction": {
+        "duration": 2855.676375,
+        "inputTokens": 947,
+        "outputTokens": 387,
+        "totalTokens": 1334,
+        "inputCost": 0.0000947,
+        "outputCost": 0.00015480000000000002,
+        "totalCost": 0.00024950000000000005
+      },
+      "duration": 9007.956375000002,
+      "inputTokens": 2921,
+      "outputTokens": 1071,
+      "totalTokens": 3992,
+      "inputCost": 0.0002921,
+      "outputCost": 0.00042840000000000006,
+      "totalCost": 0.0007205000000000001
+    }
+  },
+  {
+    "fileUrl": "/Users/nishant.patel/Downloads/Afip vigente (1)_page-0001.jpg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "taxpayer_name",
+        "cuit",
+        "fiscal_address",
+        "registered_taxes",
+        "main_activity",
+        "validity"
+      ],
+      "properties": {
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "cuit": {
+          "type": "string",
+          "description": "The taxpayer's Unique Tax Identification Code (Clave Única de Identificación Tributaria)."
+        },
+        "fiscal_address": {
+          "type": "object",
+          "required": [
+            "street_address",
+            "city",
+            "postal_code"
+          ],
+          "properties": {
+            "street_address": {
+              "type": "string",
+              "description": "The street and number of the fiscal address."
+            },
+            "city": {
+              "type": "string",
+              "description": "The city of the fiscal address."
+            },
+            "postal_code": {
+              "type": "string",
+              "description": "The postal code of the fiscal address."
+            }
+          }
+        },
+        "registered_taxes": {
+          "type": "array",
+          "description": "List of taxes and regimes the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "start_date"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the tax or regime."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "Start date of the registration for the tax (MM-YYYY)."
+              }
+            }
+          }
+        },
+        "main_activity": {
+          "type": "object",
+          "required": [
+            "description",
+            "start_month"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Description of the main economic activity."
+            },
+            "start_month": {
+              "type": "string",
+              "description": "Start month of the activity (MM/YYYY)."
+            }
+          }
+        },
+        "validity": {
+          "type": "object",
+          "required": [
+            "start_date",
+            "end_date"
+          ],
+          "properties": {
+            "start_date": {
+              "type": "string",
+              "description": "The start date of the certificate's validity (DD-MM-YYYY)."
+            },
+            "end_date": {
+              "type": "string",
+              "description": "The end date of the certificate's validity (DD-MM-YYYY)."
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.5-flash",
+    "extractionModel": "gemini-2.5-flash",
+    "trueMarkdown": "22/12/25, 10:05 a.m.  \nFormulario de Impresión de Constancia de Inscripción\n\n---\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"width: 30%; vertical-align: top;\">\n      <h1><logo>ARCA<logo></h1>\n    </td>\n    <td style=\"width: 70%; text-align: center; vertical-align: middle;\">\n      AGENCIA DE RECAUDACION Y CONTROL ADUANERO<br>\n      <b>CONSTANCIA DE INSCRIPCION</b>\n    </td>\n  </tr>\n</table>\n\n<table style=\"width: 100%; border: 1px solid black; border-collapse: collapse;\">\n  <tr>\n    <td style=\"padding: 5px;\">\n      <b>OJEDA OZUNA FIDELINA CUIT: 27-93983005-2</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td style=\"text-align: right;\">11-2025</td>\n  </tr>\n</table>\n\n*************************************************  \nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br><br><br><br><br><br>\n\nEsta constancia no da cuenta de la inscripción en:\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.**\n- **Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.**\n- **Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n- **Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n\n<table style=\"width: 100%; border-collapse: collapse; border: 1px solid black;\">\n  <tr style=\"background-color: #f0f0f0;\">\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp; Mes de inicio: <i>01/2024</i>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Secundaria(s):\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Mes de cierre ejercicio comercial: &nbsp;<b>12</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"text-align: center;\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td style=\"border: 1px solid black; padding: 5px;\">\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%;\">\n  <tr>\n    <td>Vigencia de la presente constancia: <b>22-12-2025</b> a <b>21-01-2026</b></td>\n    <td style=\"text-align: right;\">Hora <b>10:04:23</b> Verificador <b>109962093530</b></td>\n  </tr>\n</table>\n\n<br>\n\n<div style=\"text-align: center; font-weight: bold; font-size: 1.2em;\">\nARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA\n</div>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n<br><br>\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<div style=\"text-align: right;\">\n<page_number>1/1<page_number>\n</div>",
+    "trueJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "predictedMarkdown": "22/12/25, 10:05 a.m. Formulario de Impresión de Constancia de Inscripción\n\n<logo>ARCA<logo> AGENCIA DE RECAUDACION Y CONTROL ADUANERO\nCONSTANCIA DE INSCRIPCION\n\n<logo>ARCA<logo>\n\nOJEDA OZUNA FIDELINA CUIT: 27-93983005-2\n\n<logo>ARCA<logo>\n\n### IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GANANCIAS PERSONAS FISICAS</td>\n      <td>01-2025</td>\n    </tr>\n    <tr>\n      <td>IVA</td>\n      <td>01-2025</td>\n    </tr>\n    <tr>\n      <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n      <td>01-2025</td>\n    </tr>\n    <tr>\n      <td>REG. SEG. SOCIAL EMPLEADOR</td>\n      <td>11-2025</td>\n    </tr>\n  </tbody>\n</table>\n\n<logo>ARCA<logo>\n\nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<logo>ARCA<logo>\n\nEsta constancia no da cuenta de la inscripción en:\n- Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.\n- Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n- Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n- Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\n<logo>ARCA<logo>\n\n### ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA\n\nActividad principal: 561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO Mes de inicio: 01/2024\nSecundaria(s):\nMes de cierre ejercicio comercial: 12\n\n### DOMICILIO FISCAL - <logo>ARCA<logo>\n\nJUNIN 1091\n1113-CIUDAD AUTONOMA BUENOS AIRES\n\n<logo>ARCA<logo>\n\nVigencia de la presente constancia: 22-12-2025 a 21-01-2026 Hora 10:04:23 Verificador 109962093530\n\n<logo>ARCA<logo> <logo>ARCA<logo> <logo>ARCA<logo>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de <logo>ARCA<logo> http://www.arca.gob.ar.\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do <page_number>1/1<page_number>",
+    "predictedJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "levenshteinDistance": 0.5251,
+    "jsonAccuracy": 0.8824,
+    "jsonDiff": {
+      "registered_taxes": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            }
+          }
+        ],
+        [
+          " "
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        }
+      }
+    },
+    "fullJsonDiff": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        [
+          " ",
+          {
+            "name": "GANANCIAS PERSONAS FISICAS",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "IVA",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            },
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "REG. SEG. SOCIAL EMPLEADOR",
+            "start_date": "11-2025"
+          }
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        },
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 2,
+      "total": 2
+    },
+    "jsonAccuracyResult": {
+      "score": 0.8824,
+      "jsonDiff": {
+        "registered_taxes": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              }
+            }
+          ],
+          [
+            " "
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          }
+        }
+      },
+      "fullJsonDiff": {
+        "taxpayer_name": "OJEDA OZUNA FIDELINA",
+        "cuit": "27-93983005-2",
+        "fiscal_address": {
+          "street_address": "JUNIN 1091",
+          "city": "CIUDAD AUTONOMA BUENOS AIRES",
+          "postal_code": "1113"
+        },
+        "registered_taxes": [
+          [
+            " ",
+            {
+              "name": "GANANCIAS PERSONAS FISICAS",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "IVA",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              },
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "REG. SEG. SOCIAL EMPLEADOR",
+              "start_date": "11-2025"
+            }
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          },
+          "start_month": "01/2024"
+        },
+        "validity": {
+          "start_date": "22-12-2025",
+          "end_date": "21-01-2026"
+        }
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 2,
+        "total": 2
+      },
+      "totalFields": 17
+    },
+    "usage": {
+      "ocr": {
+        "duration": 8316.475208,
+        "inputTokens": 1974,
+        "outputTokens": 845,
+        "totalTokens": 2819,
+        "inputCost": 0.0005922,
+        "outputCost": 0.0021125,
+        "totalCost": 0.0027047
+      },
+      "extraction": {
+        "duration": 4720.695874999999,
+        "inputTokens": 1108,
+        "outputTokens": 387,
+        "totalTokens": 1495,
+        "inputCost": 0.0003324,
+        "outputCost": 0.0009675,
+        "totalCost": 0.0012999
+      },
+      "duration": 13037.171083,
+      "inputTokens": 3082,
+      "outputTokens": 1232,
+      "totalTokens": 4314,
+      "inputCost": 0.0009246,
+      "outputCost": 0.00308,
+      "totalCost": 0.0040046000000000005
+    }
+  },
+  {
+    "fileUrl": "/Users/nishant.patel/Downloads/Afip vigente (1)_page-0001.jpg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "taxpayer_name",
+        "cuit",
+        "fiscal_address",
+        "registered_taxes",
+        "main_activity",
+        "validity"
+      ],
+      "properties": {
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "cuit": {
+          "type": "string",
+          "description": "The taxpayer's Unique Tax Identification Code (Clave Única de Identificación Tributaria)."
+        },
+        "fiscal_address": {
+          "type": "object",
+          "required": [
+            "street_address",
+            "city",
+            "postal_code"
+          ],
+          "properties": {
+            "street_address": {
+              "type": "string",
+              "description": "The street and number of the fiscal address."
+            },
+            "city": {
+              "type": "string",
+              "description": "The city of the fiscal address."
+            },
+            "postal_code": {
+              "type": "string",
+              "description": "The postal code of the fiscal address."
+            }
+          }
+        },
+        "registered_taxes": {
+          "type": "array",
+          "description": "List of taxes and regimes the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "start_date"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the tax or regime."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "Start date of the registration for the tax (MM-YYYY)."
+              }
+            }
+          }
+        },
+        "main_activity": {
+          "type": "object",
+          "required": [
+            "description",
+            "start_month"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Description of the main economic activity."
+            },
+            "start_month": {
+              "type": "string",
+              "description": "Start month of the activity (MM/YYYY)."
+            }
+          }
+        },
+        "validity": {
+          "type": "object",
+          "required": [
+            "start_date",
+            "end_date"
+          ],
+          "properties": {
+            "start_date": {
+              "type": "string",
+              "description": "The start date of the certificate's validity (DD-MM-YYYY)."
+            },
+            "end_date": {
+              "type": "string",
+              "description": "The end date of the certificate's validity (DD-MM-YYYY)."
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-3-flash-preview",
+    "extractionModel": "gemini-3-flash-preview",
+    "trueMarkdown": "22/12/25, 10:05 a.m.  \nFormulario de Impresión de Constancia de Inscripción\n\n---\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"width: 30%; vertical-align: top;\">\n      <h1><logo>ARCA<logo></h1>\n    </td>\n    <td style=\"width: 70%; text-align: center; vertical-align: middle;\">\n      AGENCIA DE RECAUDACION Y CONTROL ADUANERO<br>\n      <b>CONSTANCIA DE INSCRIPCION</b>\n    </td>\n  </tr>\n</table>\n\n<table style=\"width: 100%; border: 1px solid black; border-collapse: collapse;\">\n  <tr>\n    <td style=\"padding: 5px;\">\n      <b>OJEDA OZUNA FIDELINA CUIT: 27-93983005-2</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td style=\"text-align: right;\">11-2025</td>\n  </tr>\n</table>\n\n*************************************************  \nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br><br><br><br><br><br>\n\nEsta constancia no da cuenta de la inscripción en:\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.**\n- **Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.**\n- **Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n- **Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n\n<table style=\"width: 100%; border-collapse: collapse; border: 1px solid black;\">\n  <tr style=\"background-color: #f0f0f0;\">\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp; Mes de inicio: <i>01/2024</i>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Secundaria(s):\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Mes de cierre ejercicio comercial: &nbsp;<b>12</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"text-align: center;\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td style=\"border: 1px solid black; padding: 5px;\">\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%;\">\n  <tr>\n    <td>Vigencia de la presente constancia: <b>22-12-2025</b> a <b>21-01-2026</b></td>\n    <td style=\"text-align: right;\">Hora <b>10:04:23</b> Verificador <b>109962093530</b></td>\n  </tr>\n</table>\n\n<br>\n\n<div style=\"text-align: center; font-weight: bold; font-size: 1.2em;\">\nARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA\n</div>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n<br><br>\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<div style=\"text-align: right;\">\n<page_number>1/1<page_number>\n</div>",
+    "trueJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "predictedMarkdown": "22/12/25, 10:05 a.m. Formulario de Impresión de Constancia de Inscripción\n\n<logo>ARCA<logo>\nAGENCIA DE RECAUDACION Y CONTROL ADUANERO\n# CONSTANCIA DE INSCRIPCION\n\nOJEDA OZUNA FIDELINA CUIT: 27-93983005-2\n\nARCA\nARCA\nARCA\nARCA\nARCA\nARCA\n\n### IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA\n\n<table>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td>11-2025</td>\n  </tr>\n</table>\n\n************************************************************\nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\nEsta constancia no da cuenta de la inscripción en:\n- Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.\n- Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n- Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n- Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\nARCA\nARCA\nARCA\nARCA\nARCA\nARCA\n\n### ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA\n\nActividad principal: 561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO Mes de inicio: 01/2024\nSecundaria(s):\nMes de cierre ejercicio comercial: 12\n\n### DOMICILIO FISCAL - ARCA\nJUNIN 1091\n1113-CIUDAD AUTONOMA BUENOS AIRES\n\nVigencia de la presente constancia: 22-12-2025 a 21-01-2026 Hora 10:04:23 Verificador 109962093530\n\n<logo>ARCA<logo> <logo>ARCA<logo> <logo>ARCA<logo> <logo>ARCA<logo> <logo>ARCA<logo>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<page_number>1/1<page_number>",
+    "predictedJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "levenshteinDistance": 0.5464,
+    "jsonAccuracy": 0.9412,
+    "jsonDiff": {
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        }
+      }
+    },
+    "fullJsonDiff": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        },
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 1,
+      "total": 1
+    },
+    "jsonAccuracyResult": {
+      "score": 0.9412,
+      "jsonDiff": {
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          }
+        }
+      },
+      "fullJsonDiff": {
+        "taxpayer_name": "OJEDA OZUNA FIDELINA",
+        "cuit": "27-93983005-2",
+        "fiscal_address": {
+          "street_address": "JUNIN 1091",
+          "city": "CIUDAD AUTONOMA BUENOS AIRES",
+          "postal_code": "1113"
+        },
+        "registered_taxes": [
+          {
+            "name": "GANANCIAS PERSONAS FISICAS",
+            "start_date": "01-2025"
+          },
+          {
+            "name": "IVA",
+            "start_date": "01-2025"
+          },
+          {
+            "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+            "start_date": "01-2025"
+          },
+          {
+            "name": "REG. SEG. SOCIAL EMPLEADOR",
+            "start_date": "11-2025"
+          }
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          },
+          "start_month": "01/2024"
+        },
+        "validity": {
+          "start_date": "22-12-2025",
+          "end_date": "21-01-2026"
+        }
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 1,
+        "total": 1
+      },
+      "totalFields": 17
+    },
+    "usage": {
+      "ocr": {
+        "duration": 47850.533958,
+        "inputTokens": 1270,
+        "outputTokens": 805,
+        "totalTokens": 2075,
+        "inputCost": 0.0015875,
+        "outputCost": 0.00805,
+        "totalCost": 0.0096375
+      },
+      "extraction": {
+        "duration": 9481.73775,
+        "inputTokens": 1076,
+        "outputTokens": 255,
+        "totalTokens": 1331,
+        "inputCost": 0.001345,
+        "outputCost": 0.00255,
+        "totalCost": 0.003895
+      },
+      "duration": 57332.271708,
+      "inputTokens": 2346,
+      "outputTokens": 1060,
+      "totalTokens": 3406,
+      "inputCost": 0.0029325,
+      "outputCost": 0.0106,
+      "totalCost": 0.0135325
+    }
+  },
+  {
+    "fileUrl": "/Users/nishant.patel/Downloads/Afip vigente (1)_page-0001.jpg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "taxpayer_name",
+        "cuit",
+        "fiscal_address",
+        "registered_taxes",
+        "main_activity",
+        "validity"
+      ],
+      "properties": {
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "cuit": {
+          "type": "string",
+          "description": "The taxpayer's Unique Tax Identification Code (Clave Única de Identificación Tributaria)."
+        },
+        "fiscal_address": {
+          "type": "object",
+          "required": [
+            "street_address",
+            "city",
+            "postal_code"
+          ],
+          "properties": {
+            "street_address": {
+              "type": "string",
+              "description": "The street and number of the fiscal address."
+            },
+            "city": {
+              "type": "string",
+              "description": "The city of the fiscal address."
+            },
+            "postal_code": {
+              "type": "string",
+              "description": "The postal code of the fiscal address."
+            }
+          }
+        },
+        "registered_taxes": {
+          "type": "array",
+          "description": "List of taxes and regimes the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "start_date"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the tax or regime."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "Start date of the registration for the tax (MM-YYYY)."
+              }
+            }
+          }
+        },
+        "main_activity": {
+          "type": "object",
+          "required": [
+            "description",
+            "start_month"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Description of the main economic activity."
+            },
+            "start_month": {
+              "type": "string",
+              "description": "Start month of the activity (MM/YYYY)."
+            }
+          }
+        },
+        "validity": {
+          "type": "object",
+          "required": [
+            "start_date",
+            "end_date"
+          ],
+          "properties": {
+            "start_date": {
+              "type": "string",
+              "description": "The start date of the certificate's validity (DD-MM-YYYY)."
+            },
+            "end_date": {
+              "type": "string",
+              "description": "The end date of the certificate's validity (DD-MM-YYYY)."
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-3-pro-preview",
+    "extractionModel": "gemini-3-pro-preview",
+    "trueMarkdown": "22/12/25, 10:05 a.m.  \nFormulario de Impresión de Constancia de Inscripción\n\n---\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"width: 30%; vertical-align: top;\">\n      <h1><logo>ARCA<logo></h1>\n    </td>\n    <td style=\"width: 70%; text-align: center; vertical-align: middle;\">\n      AGENCIA DE RECAUDACION Y CONTROL ADUANERO<br>\n      <b>CONSTANCIA DE INSCRIPCION</b>\n    </td>\n  </tr>\n</table>\n\n<table style=\"width: 100%; border: 1px solid black; border-collapse: collapse;\">\n  <tr>\n    <td style=\"padding: 5px;\">\n      <b>OJEDA OZUNA FIDELINA CUIT: 27-93983005-2</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td style=\"text-align: right;\">11-2025</td>\n  </tr>\n</table>\n\n*************************************************  \nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br><br><br><br><br><br>\n\nEsta constancia no da cuenta de la inscripción en:\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.**\n- **Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.**\n- **Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n- **Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n\n<table style=\"width: 100%; border-collapse: collapse; border: 1px solid black;\">\n  <tr style=\"background-color: #f0f0f0;\">\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp; Mes de inicio: <i>01/2024</i>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Secundaria(s):\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Mes de cierre ejercicio comercial: &nbsp;<b>12</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"text-align: center;\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td style=\"border: 1px solid black; padding: 5px;\">\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%;\">\n  <tr>\n    <td>Vigencia de la presente constancia: <b>22-12-2025</b> a <b>21-01-2026</b></td>\n    <td style=\"text-align: right;\">Hora <b>10:04:23</b> Verificador <b>109962093530</b></td>\n  </tr>\n</table>\n\n<br>\n\n<div style=\"text-align: center; font-weight: bold; font-size: 1.2em;\">\nARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA\n</div>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n<br><br>\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<div style=\"text-align: right;\">\n<page_number>1/1<page_number>\n</div>",
+    "trueJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "predictedMarkdown": "22/12/25, 10:05 a.m. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formulario de Impresión de Constancia de Inscripción\n\n---\n\n<logo>ARCA<logo>\n\nAGENCIA DE RECAUDACION Y CONTROL ADUANERO\n# CONSTANCIA DE INSCRIPCION\n\n<table width=\"100%\" border=\"1\">\n  <tr>\n    <td colspan=\"2\"><b>OJEDA OZUNA FIDELINA</b> CUIT: <b>27-93983005-2</b></td>\n  </tr>\n</table>\n\n<table width=\"100%\" border=\"0\">\n  <tr>\n    <td colspan=\"2\" align=\"center\"><b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b></td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td align=\"right\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td align=\"right\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td align=\"right\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td align=\"right\">11-2025</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">**************************************************</td>\n  </tr>\n</table>\n\nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br>\n\n**Esta constancia no da cuenta de la inscripción en:**\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476:** de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.\n- **Impuesto a las Ganancias:** la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n- **Aporte Solidario:** de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n- **Responsable Deuda Ajena Aporte Solidario:** de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\n<br>\n\n<table width=\"100%\" border=\"1\" cellpadding=\"5\">\n  <tr>\n    <td align=\"center\" style=\"background-color: #f0f0f0;\"><b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b></td>\n  </tr>\n  <tr>\n    <td>\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp;&nbsp; Mes de inicio: <i>01/2024</i><br>\n      Secundaria(s):<br>\n      Mes de cierre ejercicio comercial: <b>12</b>\n    </td>\n  </tr>\n</table>\n\n<table width=\"100%\" border=\"1\" cellpadding=\"5\">\n  <tr>\n    <td align=\"center\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td>\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\nVigencia de la presente constancia: **22-12-2025** a **21-01-2026** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hora **10:04:23** Verificador **109962093530**\n\n<br>\n\n<div align=\"center\">\n<logo>ARCA<logo> &nbsp;&nbsp;&nbsp;&nbsp; <logo>ARCA<logo> &nbsp;&nbsp;&nbsp;&nbsp; <logo>ARCA<logo> &nbsp;&nbsp;&nbsp;&nbsp; <logo>ARCA<logo> &nbsp;&nbsp;&nbsp;&nbsp; <logo>ARCA<logo>\n</div>\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n---\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do <div align=\"right\"><page_number>1/1<page_number></div>",
+    "predictedJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "levenshteinDistance": 0.5998,
+    "jsonAccuracy": 0.8824,
+    "jsonDiff": {
+      "registered_taxes": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            }
+          }
+        ],
+        [
+          " "
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        }
+      }
+    },
+    "fullJsonDiff": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        [
+          " ",
+          {
+            "name": "GANANCIAS PERSONAS FISICAS",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "IVA",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            },
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "REG. SEG. SOCIAL EMPLEADOR",
+            "start_date": "11-2025"
+          }
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        },
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 2,
+      "total": 2
+    },
+    "jsonAccuracyResult": {
+      "score": 0.8824,
+      "jsonDiff": {
+        "registered_taxes": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              }
+            }
+          ],
+          [
+            " "
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          }
+        }
+      },
+      "fullJsonDiff": {
+        "taxpayer_name": "OJEDA OZUNA FIDELINA",
+        "cuit": "27-93983005-2",
+        "fiscal_address": {
+          "street_address": "JUNIN 1091",
+          "city": "CIUDAD AUTONOMA BUENOS AIRES",
+          "postal_code": "1113"
+        },
+        "registered_taxes": [
+          [
+            " ",
+            {
+              "name": "GANANCIAS PERSONAS FISICAS",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "IVA",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              },
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "REG. SEG. SOCIAL EMPLEADOR",
+              "start_date": "11-2025"
+            }
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          },
+          "start_month": "01/2024"
+        },
+        "validity": {
+          "start_date": "22-12-2025",
+          "end_date": "21-01-2026"
+        }
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 2,
+        "total": 2
+      },
+      "totalFields": 17
+    },
+    "usage": {
+      "ocr": {
+        "duration": 38959.425334,
+        "inputTokens": 1270,
+        "outputTokens": 1302,
+        "totalTokens": 2572,
+        "inputCost": 0.0015875,
+        "outputCost": 0.01302,
+        "totalCost": 0.0146075
+      },
+      "extraction": {
+        "duration": 20370.292916000006,
+        "inputTokens": 1571,
+        "outputTokens": 387,
+        "totalTokens": 1958,
+        "inputCost": 0.00196375,
+        "outputCost": 0.00387,
+        "totalCost": 0.00583375
+      },
+      "duration": 59329.718250000005,
+      "inputTokens": 2841,
+      "outputTokens": 1689,
+      "totalTokens": 4530,
+      "inputCost": 0.0035512499999999997,
+      "outputCost": 0.016890000000000002,
+      "totalCost": 0.02044125
+    }
+  },
+  {
+    "fileUrl": "/Users/nishant.patel/Downloads/Afip vigente (1)_page-0001.jpg",
+    "metadata": {
+      "orientation": 0,
+      "documentQuality": "clean",
+      "resolution": [
+        612,
+        792
+      ],
+      "language": "EN"
+    },
+    "jsonSchema": {
+      "type": "object",
+      "required": [
+        "taxpayer_name",
+        "cuit",
+        "fiscal_address",
+        "registered_taxes",
+        "main_activity",
+        "validity"
+      ],
+      "properties": {
+        "taxpayer_name": {
+          "type": "string",
+          "description": "Full name of the taxpayer."
+        },
+        "cuit": {
+          "type": "string",
+          "description": "The taxpayer's Unique Tax Identification Code (Clave Única de Identificación Tributaria)."
+        },
+        "fiscal_address": {
+          "type": "object",
+          "required": [
+            "street_address",
+            "city",
+            "postal_code"
+          ],
+          "properties": {
+            "street_address": {
+              "type": "string",
+              "description": "The street and number of the fiscal address."
+            },
+            "city": {
+              "type": "string",
+              "description": "The city of the fiscal address."
+            },
+            "postal_code": {
+              "type": "string",
+              "description": "The postal code of the fiscal address."
+            }
+          }
+        },
+        "registered_taxes": {
+          "type": "array",
+          "description": "List of taxes and regimes the taxpayer is registered for.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "start_date"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the tax or regime."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "Start date of the registration for the tax (MM-YYYY)."
+              }
+            }
+          }
+        },
+        "main_activity": {
+          "type": "object",
+          "required": [
+            "description",
+            "start_month"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Description of the main economic activity."
+            },
+            "start_month": {
+              "type": "string",
+              "description": "Start month of the activity (MM/YYYY)."
+            }
+          }
+        },
+        "validity": {
+          "type": "object",
+          "required": [
+            "start_date",
+            "end_date"
+          ],
+          "properties": {
+            "start_date": {
+              "type": "string",
+              "description": "The start date of the certificate's validity (DD-MM-YYYY)."
+            },
+            "end_date": {
+              "type": "string",
+              "description": "The end date of the certificate's validity (DD-MM-YYYY)."
+            }
+          }
+        }
+      }
+    },
+    "ocrModel": "gemini-2.5-pro",
+    "extractionModel": "gemini-2.5-pro",
+    "trueMarkdown": "22/12/25, 10:05 a.m.  \nFormulario de Impresión de Constancia de Inscripción\n\n---\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"width: 30%; vertical-align: top;\">\n      <h1><logo>ARCA<logo></h1>\n    </td>\n    <td style=\"width: 70%; text-align: center; vertical-align: middle;\">\n      AGENCIA DE RECAUDACION Y CONTROL ADUANERO<br>\n      <b>CONSTANCIA DE INSCRIPCION</b>\n    </td>\n  </tr>\n</table>\n\n<table style=\"width: 100%; border: 1px solid black; border-collapse: collapse;\">\n  <tr>\n    <td style=\"padding: 5px;\">\n      <b>OJEDA OZUNA FIDELINA CUIT: 27-93983005-2</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td style=\"text-align: right;\">01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td style=\"text-align: right;\">11-2025</td>\n  </tr>\n</table>\n\n*************************************************  \nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<br><br><br><br><br><br>\n\nEsta constancia no da cuenta de la inscripción en:\n- **Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.**\n- **Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.**\n- **Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n- **Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.**\n\n<table style=\"width: 100%; border-collapse: collapse; border: 1px solid black;\">\n  <tr style=\"background-color: #f0f0f0;\">\n    <td colspan=\"2\" style=\"text-align: center; border-bottom: 1px solid black;\">\n      <b>ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA</b>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Actividad principal: <i>561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO</i> &nbsp; Mes de inicio: <i>01/2024</i>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Secundaria(s):\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" style=\"padding: 5px;\">\n      Mes de cierre ejercicio comercial: &nbsp;<b>12</b>\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%; border-collapse: collapse;\">\n  <tr>\n    <td style=\"text-align: center;\"><b>DOMICILIO FISCAL - ARCA</b></td>\n  </tr>\n  <tr>\n    <td style=\"border: 1px solid black; padding: 5px;\">\n      JUNIN 1091<br>\n      1113-CIUDAD AUTONOMA BUENOS AIRES\n    </td>\n  </tr>\n</table>\n\n<br>\n\n<table style=\"width: 100%;\">\n  <tr>\n    <td>Vigencia de la presente constancia: <b>22-12-2025</b> a <b>21-01-2026</b></td>\n    <td style=\"text-align: right;\">Hora <b>10:04:23</b> Verificador <b>109962093530</b></td>\n  </tr>\n</table>\n\n<br>\n\n<div style=\"text-align: center; font-weight: bold; font-size: 1.2em;\">\nARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCA\n</div>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\n<br><br>\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<div style=\"text-align: right;\">\n<page_number>1/1<page_number>\n</div>",
+    "trueJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "predictedMarkdown": "22/12/25, 10:05 a.m.\nFormulario de Impresión de Constancia de Inscripción\n\n<logo>ARCA</logo>\n\nAGENCIA DE RECAUDACION Y CONTROL ADUANERO\n# CONSTANCIA DE INSCRIPCION\n\n<logo>ARCA</logo> <logo>ARCA</logo>\n\nOJEDA OZUNA FIDELINA CUIT: 27-93983005-2\n\n### IMPUESTOS/REGIMENES NACIONALES REGISTRADOS Y FECHA DE ALTA\n\n<table>\n  <tr>\n    <td>GANANCIAS PERSONAS FISICAS</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>IVA</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000</td>\n    <td>01-2025</td>\n  </tr>\n  <tr>\n    <td>REG. SEG. SOCIAL EMPLEADOR</td>\n    <td>11-2025</td>\n  </tr>\n</table>\n\n**************************************************\n\n<logo>ARCA</logo> <logo>ARCA</logo>\n\nContribuyente no amparado en los beneficios promocionales INDUSTRIALES establecidos por Ley 22021 y sus modificatorias 22702 y 22973, a la fecha de emision de la presente constancia.\n\n<logo>ARCA</logo> <logo>ARCA</logo>\n\nEsta constancia no da cuenta de la inscripción en:\n- Impuesto Bienes Personales y Exteriorización - Ley 26476: de corresponder, deberán solicitarse en la dependencia donde se encuentra inscripto.\n- Impuesto a las Ganancias: la condición de exenta, para las entidades enunciadas en los incisos b), d), e), f), g), m) y r) del Art. 20 de la ley, se acredita mediante el \"Certificado de exención en el Impuesto a las Ganancias\" - Resolución General 2681.\n- Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n- Responsable Deuda Ajena Aporte Solidario: de corresponder, deberá solicitarse en la dependencia donde se encuentra inscripto.\n\n<logo>ARCA</logo> <logo>ARCA</logo>\n\n### ACTIVIDADES NACIONALES REGISTRADAS Y FECHA DE ALTA\n\nActividad principal: 561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO Mes de inicio: 01/2024\nSecundaria(s):\n\nMes de cierre ejercicio comercial: 12\n\n<logo>ARCA</logo> <logo>ARCA</logo>\n\n### DOMICILIO FISCAL - ARCA\n\nJUNIN 1091\n1113-CIUDAD AUTONOMA BUENOS AIRES\n\nVigencia de la presente constancia: **22-12-2025** a **21-01-2026**\nHora **10:04:23** Verificador **109962093530**\n\n<logo>ARCA</logo> <logo>ARCA</logo> <logo>ARCA</logo> <logo>ARCA</logo> <logo>ARCA</logo>\n\nLos datos contenidos en la presente constancia deberán ser validados por el receptor de la misma en la página institucional de ARCA http://www.arca.gob.ar.\n\nhttps://seti.afip.gob.ar/padron-puc-constancia-internet/ConsultaConstanciaAction.do\n<page_number>1/1</page_number>",
+    "predictedJson": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        {
+          "name": "GANANCIAS PERSONAS FISICAS",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "IVA",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000",
+          "start_date": "01-2025"
+        },
+        {
+          "name": "REG. SEG. SOCIAL EMPLEADOR",
+          "start_date": "11-2025"
+        }
+      ],
+      "main_activity": {
+        "description": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "levenshteinDistance": 0.5445,
+    "jsonAccuracy": 0.8824,
+    "jsonDiff": {
+      "registered_taxes": [
+        [
+          " "
+        ],
+        [
+          " "
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            }
+          }
+        ],
+        [
+          " "
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        }
+      }
+    },
+    "fullJsonDiff": {
+      "taxpayer_name": "OJEDA OZUNA FIDELINA",
+      "cuit": "27-93983005-2",
+      "fiscal_address": {
+        "street_address": "JUNIN 1091",
+        "city": "CIUDAD AUTONOMA BUENOS AIRES",
+        "postal_code": "1113"
+      },
+      "registered_taxes": [
+        [
+          " ",
+          {
+            "name": "GANANCIAS PERSONAS FISICAS",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "IVA",
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          "~",
+          {
+            "name": {
+              "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+              "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+            },
+            "start_date": "01-2025"
+          }
+        ],
+        [
+          " ",
+          {
+            "name": "REG. SEG. SOCIAL EMPLEADOR",
+            "start_date": "11-2025"
+          }
+        ]
+      ],
+      "main_activity": {
+        "description": {
+          "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+          "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+        },
+        "start_month": "01/2024"
+      },
+      "validity": {
+        "start_date": "22-12-2025",
+        "end_date": "21-01-2026"
+      }
+    },
+    "jsonDiffStats": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 2,
+      "total": 2
+    },
+    "jsonAccuracyResult": {
+      "score": 0.8824,
+      "jsonDiff": {
+        "registered_taxes": [
+          [
+            " "
+          ],
+          [
+            " "
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              }
+            }
+          ],
+          [
+            " "
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          }
+        }
+      },
+      "fullJsonDiff": {
+        "taxpayer_name": "OJEDA OZUNA FIDELINA",
+        "cuit": "27-93983005-2",
+        "fiscal_address": {
+          "street_address": "JUNIN 1091",
+          "city": "CIUDAD AUTONOMA BUENOS AIRES",
+          "postal_code": "1113"
+        },
+        "registered_taxes": [
+          [
+            " ",
+            {
+              "name": "GANANCIAS PERSONAS FISICAS",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "IVA",
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            "~",
+            {
+              "name": {
+                "__old": "REG. TRAB. AUTONOMO Categoría T3 Cat I Ingresos hasta $25.000",
+                "__new": "REG. TRAB. AUTONOMO Categoria T3 Cat I Ingresos hasta $25.000"
+              },
+              "start_date": "01-2025"
+            }
+          ],
+          [
+            " ",
+            {
+              "name": "REG. SEG. SOCIAL EMPLEADOR",
+              "start_date": "11-2025"
+            }
+          ]
+        ],
+        "main_activity": {
+          "description": {
+            "__old": "56101 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO",
+            "__new": "561013 (F-883) SERVICIOS DE \"FAST FOOD\" Y LOCALES DE VENTA DE COMIDAS Y BEBIDAS AL PASO"
+          },
+          "start_month": "01/2024"
+        },
+        "validity": {
+          "start_date": "22-12-2025",
+          "end_date": "21-01-2026"
+        }
+      },
+      "jsonDiffStats": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 2,
+        "total": 2
+      },
+      "totalFields": 17
+    },
+    "usage": {
+      "ocr": {
+        "duration": 58201.525417000004,
+        "inputTokens": 1974,
+        "outputTokens": 868,
+        "totalTokens": 2842,
+        "inputCost": 0.0024675,
+        "outputCost": 0.00868,
+        "totalCost": 0.011147500000000001
+      },
+      "extraction": {
+        "duration": 8149.074042,
+        "inputTokens": 1131,
+        "outputTokens": 387,
+        "totalTokens": 1518,
+        "inputCost": 0.00141375,
+        "outputCost": 0.00387,
+        "totalCost": 0.00528375
+      },
+      "duration": 66350.599459,
+      "inputTokens": 3105,
+      "outputTokens": 1255,
+      "totalTokens": 4360,
+      "inputCost": 0.00388125,
+      "outputCost": 0.01255,
+      "totalCost": 0.01643125
+    }
+  }
+]
